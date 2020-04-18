@@ -1,0 +1,997 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 11693 16535 portrait
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Motor:Motor_DC P1
+U 1 1 5EE707F5
+P 5700 1950
+F 0 "P1" H 5858 1946 50  0000 L CNN
+F 1 "Pump_Motor_DC" H 5858 1855 50  0000 L CNN
+F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 5700 1860 50  0001 C CNN
+F 3 "~" H 5700 1860 50  0001 C CNN
+	1    5700 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0150
+U 1 1 5EE90E71
+P 5700 2250
+F 0 "#PWR0150" H 5700 2000 50  0001 C CNN
+F 1 "GND" H 5705 2077 50  0000 C CNN
+F 2 "" H 5700 2250 50  0001 C CNN
+F 3 "" H 5700 2250 50  0001 C CNN
+	1    5700 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0153
+U 1 1 5EEB29F5
+P 5700 13050
+F 0 "#PWR0153" H 5700 12800 50  0001 C CNN
+F 1 "GND" H 5705 12877 50  0000 C CNN
+F 2 "" H 5700 13050 50  0001 C CNN
+F 3 "" H 5700 13050 50  0001 C CNN
+	1    5700 13050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0145
+U 1 1 5EE09F70
+P 5700 6000
+F 0 "#PWR0145" H 5700 5850 50  0001 C CNN
+F 1 "+5V" H 5715 6173 50  0000 C CNN
+F 2 "" H 5700 6000 50  0001 C CNN
+F 3 "" H 5700 6000 50  0001 C CNN
+	1    5700 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0144
+U 1 1 5EE043D3
+P 7350 4500
+F 0 "#PWR0144" H 7350 4350 50  0001 C CNN
+F 1 "+5V" H 7365 4673 50  0000 C CNN
+F 2 "" H 7350 4500 50  0001 C CNN
+F 3 "" H 7350 4500 50  0001 C CNN
+	1    7350 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0143
+U 1 1 5EDFE8D0
+P 7350 5600
+F 0 "#PWR0143" H 7350 5450 50  0001 C CNN
+F 1 "+5V" H 7365 5773 50  0000 C CNN
+F 2 "" H 7350 5600 50  0001 C CNN
+F 3 "" H 7350 5600 50  0001 C CNN
+	1    7350 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0142
+U 1 1 5EDF8E46
+P 5700 8300
+F 0 "#PWR0142" H 5700 8150 50  0001 C CNN
+F 1 "+5V" H 5715 8473 50  0000 C CNN
+F 2 "" H 5700 8300 50  0001 C CNN
+F 3 "" H 5700 8300 50  0001 C CNN
+	1    5700 8300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0141
+U 1 1 5EDF2A61
+P 5700 9350
+F 0 "#PWR0141" H 5700 9200 50  0001 C CNN
+F 1 "+5V" H 5715 9523 50  0000 C CNN
+F 2 "" H 5700 9350 50  0001 C CNN
+F 3 "" H 5700 9350 50  0001 C CNN
+	1    5700 9350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0140
+U 1 1 5EDED2A0
+P 7350 8950
+F 0 "#PWR0140" H 7350 8800 50  0001 C CNN
+F 1 "+5V" H 7365 9123 50  0000 C CNN
+F 2 "" H 7350 8950 50  0001 C CNN
+F 3 "" H 7350 8950 50  0001 C CNN
+	1    7350 8950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0139
+U 1 1 5EDE7B73
+P 7350 10050
+F 0 "#PWR0139" H 7350 9900 50  0001 C CNN
+F 1 "+5V" H 7365 10223 50  0000 C CNN
+F 2 "" H 7350 10050 50  0001 C CNN
+F 3 "" H 7350 10050 50  0001 C CNN
+	1    7350 10050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0138
+U 1 1 5EDE240E
+P 5700 10450
+F 0 "#PWR0138" H 5700 10300 50  0001 C CNN
+F 1 "+5V" H 5715 10623 50  0000 C CNN
+F 2 "" H 5700 10450 50  0001 C CNN
+F 3 "" H 5700 10450 50  0001 C CNN
+	1    5700 10450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0137
+U 1 1 5EDAB547
+P 5700 4900
+F 0 "#PWR0137" H 5700 4750 50  0001 C CNN
+F 1 "+5V" H 5715 5073 50  0000 C CNN
+F 2 "" H 5700 4900 50  0001 C CNN
+F 3 "" H 5700 4900 50  0001 C CNN
+	1    5700 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0136
+U 1 1 5EDA5ED6
+P 7350 3400
+F 0 "#PWR0136" H 7350 3250 50  0001 C CNN
+F 1 "+5V" H 7365 3573 50  0000 C CNN
+F 2 "" H 7350 3400 50  0001 C CNN
+F 3 "" H 7350 3400 50  0001 C CNN
+	1    7350 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0135
+U 1 1 5ED9B154
+P 5700 2750
+F 0 "#PWR0135" H 5700 2600 50  0001 C CNN
+F 1 "+5V" H 5715 2923 50  0000 C CNN
+F 2 "" H 5700 2750 50  0001 C CNN
+F 3 "" H 5700 2750 50  0001 C CNN
+	1    5700 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0127
+U 1 1 5ED4BD5C
+P 5700 3800
+F 0 "#PWR0127" H 5700 3650 50  0001 C CNN
+F 1 "+5V" H 5715 3973 50  0000 C CNN
+F 2 "" H 5700 3800 50  0001 C CNN
+F 3 "" H 5700 3800 50  0001 C CNN
+	1    5700 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 10700 5700 10450
+Wire Wire Line
+	5800 10700 5700 10700
+Wire Wire Line
+	5800 10800 5700 10800
+$Comp
+L Motor:Motor_Servo_Hitec M-10
+U 1 1 5E9E4EEA
+P 6100 10700
+F 0 "M-10" H 6432 10765 50  0000 L CNN
+F 1 "Motor_Servo_Hitec" H 6432 10674 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6100 10510 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 6100 10510 50  0001 C CNN
+	1    6100 10700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 10300 7350 10050
+Wire Wire Line
+	7450 10300 7350 10300
+Wire Wire Line
+	7350 10400 7350 10550
+Wire Wire Line
+	7450 10400 7350 10400
+$Comp
+L power:GND #PWR0114
+U 1 1 5E9E4ED8
+P 7350 10550
+F 0 "#PWR0114" H 7350 10300 50  0001 C CNN
+F 1 "GND" H 7355 10377 50  0000 C CNN
+F 2 "" H 7350 10550 50  0001 C CNN
+F 3 "" H 7350 10550 50  0001 C CNN
+	1    7350 10550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Motor_Servo_Hitec M-11
+U 1 1 5E9E4ED2
+P 7750 10300
+F 0 "M-11" H 8082 10365 50  0000 L CNN
+F 1 "Motor_Servo_Hitec" H 8082 10274 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7750 10110 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 7750 10110 50  0001 C CNN
+	1    7750 10300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 9600 5700 9350
+Wire Wire Line
+	5800 9600 5700 9600
+Wire Wire Line
+	5700 9700 5700 9850
+Wire Wire Line
+	5800 9700 5700 9700
+$Comp
+L power:GND #PWR0113
+U 1 1 5E9E4EC0
+P 5700 9850
+F 0 "#PWR0113" H 5700 9600 50  0001 C CNN
+F 1 "GND" H 5705 9677 50  0000 C CNN
+F 2 "" H 5700 9850 50  0001 C CNN
+F 3 "" H 5700 9850 50  0001 C CNN
+	1    5700 9850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Motor_Servo_Hitec M-12
+U 1 1 5E9E4EBA
+P 6100 9600
+F 0 "M-12" H 6432 9665 50  0000 L CNN
+F 1 "Motor_Servo_Hitec" H 6432 9574 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6100 9410 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 6100 9410 50  0001 C CNN
+	1    6100 9600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 9200 7350 8950
+Wire Wire Line
+	7450 9200 7350 9200
+Wire Wire Line
+	7350 9300 7350 9450
+Wire Wire Line
+	7450 9300 7350 9300
+$Comp
+L power:GND #PWR0112
+U 1 1 5E9E4EA8
+P 7350 9450
+F 0 "#PWR0112" H 7350 9200 50  0001 C CNN
+F 1 "GND" H 7355 9277 50  0000 C CNN
+F 2 "" H 7350 9450 50  0001 C CNN
+F 3 "" H 7350 9450 50  0001 C CNN
+	1    7350 9450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Motor_Servo_Hitec M-13
+U 1 1 5E9E4EA2
+P 7750 9200
+F 0 "M-13" H 8082 9265 50  0000 L CNN
+F 1 "Motor_Servo_Hitec" H 8082 9174 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7750 9010 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 7750 9010 50  0001 C CNN
+	1    7750 9200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 8550 5700 8300
+Wire Wire Line
+	5800 8550 5700 8550
+Wire Wire Line
+	5700 8650 5700 8800
+Wire Wire Line
+	5800 8650 5700 8650
+$Comp
+L power:GND #PWR0111
+U 1 1 5E9DCFEB
+P 5700 8800
+F 0 "#PWR0111" H 5700 8550 50  0001 C CNN
+F 1 "GND" H 5705 8627 50  0000 C CNN
+F 2 "" H 5700 8800 50  0001 C CNN
+F 3 "" H 5700 8800 50  0001 C CNN
+	1    5700 8800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Motor_Servo_Hitec M-14
+U 1 1 5E9DCFE5
+P 6100 8550
+F 0 "M-14" H 6432 8615 50  0000 L CNN
+F 1 "Motor_Servo_Hitec" H 6432 8524 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6100 8360 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 6100 8360 50  0001 C CNN
+	1    6100 8550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 5850 7350 5600
+Wire Wire Line
+	7450 5850 7350 5850
+Wire Wire Line
+	7350 5950 7350 6100
+Wire Wire Line
+	7450 5950 7350 5950
+$Comp
+L power:GND #PWR0110
+U 1 1 5E9DCFD3
+P 7350 6100
+F 0 "#PWR0110" H 7350 5850 50  0001 C CNN
+F 1 "GND" H 7355 5927 50  0000 C CNN
+F 2 "" H 7350 6100 50  0001 C CNN
+F 3 "" H 7350 6100 50  0001 C CNN
+	1    7350 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Motor_Servo_Hitec M-6
+U 1 1 5E9DCFCD
+P 7750 5850
+F 0 "M-6" H 8082 5915 50  0000 L CNN
+F 1 "Motor_Servo_Hitec" H 8082 5824 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7750 5660 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 7750 5660 50  0001 C CNN
+	1    7750 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 6250 5700 6000
+Wire Wire Line
+	5800 6250 5700 6250
+Wire Wire Line
+	5700 6350 5700 6500
+Wire Wire Line
+	5800 6350 5700 6350
+$Comp
+L power:GND #PWR0109
+U 1 1 5E9DCFBB
+P 5700 6500
+F 0 "#PWR0109" H 5700 6250 50  0001 C CNN
+F 1 "GND" H 5705 6327 50  0000 C CNN
+F 2 "" H 5700 6500 50  0001 C CNN
+F 3 "" H 5700 6500 50  0001 C CNN
+	1    5700 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Motor_Servo_Hitec M-7
+U 1 1 5E9DCFB5
+P 6100 6250
+F 0 "M-7" H 6432 6315 50  0000 L CNN
+F 1 "Motor_Servo_Hitec" H 6432 6224 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6100 6060 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 6100 6060 50  0001 C CNN
+	1    6100 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 4750 7350 4500
+Wire Wire Line
+	7450 4750 7350 4750
+Wire Wire Line
+	7350 4850 7350 5000
+Wire Wire Line
+	7450 4850 7350 4850
+$Comp
+L power:GND #PWR0108
+U 1 1 5E9DCFA3
+P 7350 5000
+F 0 "#PWR0108" H 7350 4750 50  0001 C CNN
+F 1 "GND" H 7355 4827 50  0000 C CNN
+F 2 "" H 7350 5000 50  0001 C CNN
+F 3 "" H 7350 5000 50  0001 C CNN
+	1    7350 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Motor_Servo_Hitec M-4
+U 1 1 5E9DCF9D
+P 7750 4750
+F 0 "M-4" H 8082 4815 50  0000 L CNN
+F 1 "Motor_Servo_Hitec" H 8082 4724 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7750 4560 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 7750 4560 50  0001 C CNN
+	1    7750 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 5150 5700 4900
+Wire Wire Line
+	5800 5150 5700 5150
+Wire Wire Line
+	5700 5250 5700 5400
+Wire Wire Line
+	5800 5250 5700 5250
+$Comp
+L power:GND #PWR0107
+U 1 1 5E9CF913
+P 5700 5400
+F 0 "#PWR0107" H 5700 5150 50  0001 C CNN
+F 1 "GND" H 5705 5227 50  0000 C CNN
+F 2 "" H 5700 5400 50  0001 C CNN
+F 3 "" H 5700 5400 50  0001 C CNN
+	1    5700 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Motor_Servo_Hitec M-5
+U 1 1 5E9CF90D
+P 6100 5150
+F 0 "M-5" H 6432 5215 50  0000 L CNN
+F 1 "Motor_Servo_Hitec" H 6432 5124 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6100 4960 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 6100 4960 50  0001 C CNN
+	1    6100 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 3650 7350 3400
+Wire Wire Line
+	7450 3650 7350 3650
+Wire Wire Line
+	7350 3750 7350 3900
+Wire Wire Line
+	7450 3750 7350 3750
+$Comp
+L power:GND #PWR0106
+U 1 1 5E9CF8FB
+P 7350 3900
+F 0 "#PWR0106" H 7350 3650 50  0001 C CNN
+F 1 "GND" H 7355 3727 50  0000 C CNN
+F 2 "" H 7350 3900 50  0001 C CNN
+F 3 "" H 7350 3900 50  0001 C CNN
+	1    7350 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Motor_Servo_Hitec M-2
+U 1 1 5E9CF8F5
+P 7750 3650
+F 0 "M-2" H 8082 3715 50  0000 L CNN
+F 1 "Motor_Servo_Hitec" H 8082 3624 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7750 3460 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 7750 3460 50  0001 C CNN
+	1    7750 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 4050 5700 3800
+Wire Wire Line
+	5800 4050 5700 4050
+Wire Wire Line
+	5700 4150 5700 4300
+Wire Wire Line
+	5800 4150 5700 4150
+$Comp
+L power:GND #PWR0105
+U 1 1 5E9C5974
+P 5700 4300
+F 0 "#PWR0105" H 5700 4050 50  0001 C CNN
+F 1 "GND" H 5705 4127 50  0000 C CNN
+F 2 "" H 5700 4300 50  0001 C CNN
+F 3 "" H 5700 4300 50  0001 C CNN
+	1    5700 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Motor_Servo_Hitec M-3
+U 1 1 5E9C596E
+P 6100 4050
+F 0 "M-3" H 6432 4115 50  0000 L CNN
+F 1 "Motor_Servo_Hitec" H 6432 4024 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6100 3860 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 6100 3860 50  0001 C CNN
+	1    6100 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 3000 5700 2750
+Wire Wire Line
+	5800 3000 5700 3000
+Wire Wire Line
+	5700 3100 5700 3250
+Wire Wire Line
+	5800 3100 5700 3100
+$Comp
+L power:GND #PWR0101
+U 1 1 5E90D9ED
+P 5700 3250
+F 0 "#PWR0101" H 5700 3000 50  0001 C CNN
+F 1 "GND" H 5705 3077 50  0000 C CNN
+F 2 "" H 5700 3250 50  0001 C CNN
+F 3 "" H 5700 3250 50  0001 C CNN
+	1    5700 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Motor_Servo_Hitec M-1
+U 1 1 5E90D286
+P 6100 3000
+F 0 "M-1" H 6432 3065 50  0000 L CNN
+F 1 "Motor_Servo_Hitec" H 6432 2974 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6100 2810 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 6100 2810 50  0001 C CNN
+	1    6100 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0115
+U 1 1 5EBC5AFB
+P 7350 11150
+F 0 "#PWR0115" H 7350 11000 50  0001 C CNN
+F 1 "+5V" H 7365 11323 50  0000 C CNN
+F 2 "" H 7350 11150 50  0001 C CNN
+F 3 "" H 7350 11150 50  0001 C CNN
+	1    7350 11150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0159
+U 1 1 5EBC5B01
+P 5700 11550
+F 0 "#PWR0159" H 5700 11400 50  0001 C CNN
+F 1 "+5V" H 5715 11723 50  0000 C CNN
+F 2 "" H 5700 11550 50  0001 C CNN
+F 3 "" H 5700 11550 50  0001 C CNN
+	1    5700 11550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 11800 5700 11550
+Wire Wire Line
+	5800 11800 5700 11800
+Wire Wire Line
+	5700 11900 5700 12050
+Wire Wire Line
+	5800 11900 5700 11900
+$Comp
+L power:GND #PWR0160
+U 1 1 5EBC5B0B
+P 5700 12050
+F 0 "#PWR0160" H 5700 11800 50  0001 C CNN
+F 1 "GND" H 5705 11877 50  0000 C CNN
+F 2 "" H 5700 12050 50  0001 C CNN
+F 3 "" H 5700 12050 50  0001 C CNN
+	1    5700 12050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Motor_Servo_Hitec M-8
+U 1 1 5EBC5B11
+P 6100 11800
+F 0 "M-8" H 6432 11865 50  0000 L CNN
+F 1 "Motor_Servo_Hitec" H 6432 11774 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6100 11610 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 6100 11610 50  0001 C CNN
+	1    6100 11800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 11400 7350 11150
+Wire Wire Line
+	7450 11400 7350 11400
+Wire Wire Line
+	7350 11500 7350 11650
+Wire Wire Line
+	7450 11500 7350 11500
+$Comp
+L power:GND #PWR0161
+U 1 1 5EBC5B1B
+P 7350 11650
+F 0 "#PWR0161" H 7350 11400 50  0001 C CNN
+F 1 "GND" H 7355 11477 50  0000 C CNN
+F 2 "" H 7350 11650 50  0001 C CNN
+F 3 "" H 7350 11650 50  0001 C CNN
+	1    7350 11650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Motor_Servo_Hitec M-9
+U 1 1 5EBC5B21
+P 7750 11400
+F 0 "M-9" H 8082 11465 50  0000 L CNN
+F 1 "Motor_Servo_Hitec" H 8082 11374 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7750 11210 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 7750 11210 50  0001 C CNN
+	1    7750 11400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0162
+U 1 1 5EBECC6E
+P 5700 10950
+F 0 "#PWR0162" H 5700 10700 50  0001 C CNN
+F 1 "GND" H 5705 10777 50  0000 C CNN
+F 2 "" H 5700 10950 50  0001 C CNN
+F 3 "" H 5700 10950 50  0001 C CNN
+	1    5700 10950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 10800 5700 10950
+$Comp
+L Connector:DB25_Female DSUB1
+U 1 1 5ED3CA65
+P 3750 7450
+F 0 "DSUB1" H 3668 5958 50  0000 C CNN
+F 1 "DB25_Female" H 3668 6049 50  0000 C CNN
+F 2 "Connector_Dsub:DSUB-25_Female_Horizontal_P2.77x2.54mm_EdgePinOffset9.40mm" H 3750 7450 50  0001 C CNN
+F 3 " ~" H 3750 7450 50  0001 C CNN
+	1    3750 7450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4050 6250 4450 6250
+$Comp
+L power:GND #PWR0102
+U 1 1 5EE82AFE
+P 4450 6300
+F 0 "#PWR0102" H 4450 6050 50  0001 C CNN
+F 1 "GND" H 4455 6127 50  0000 C CNN
+F 2 "" H 4450 6300 50  0001 C CNN
+F 3 "" H 4450 6300 50  0001 C CNN
+	1    4450 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 6250 4450 6300
+$Comp
+L power:+5V #PWR0103
+U 1 1 5EE8B98D
+P 4250 5900
+F 0 "#PWR0103" H 4250 5750 50  0001 C CNN
+F 1 "+5V" H 4265 6073 50  0000 C CNN
+F 2 "" H 4250 5900 50  0001 C CNN
+F 3 "" H 4250 5900 50  0001 C CNN
+	1    4250 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 8650 4450 8650
+$Comp
+L power:GND #PWR0116
+U 1 1 5F0D112B
+P 4450 8700
+F 0 "#PWR0116" H 4450 8450 50  0001 C CNN
+F 1 "GND" H 4455 8527 50  0000 C CNN
+F 2 "" H 4450 8700 50  0001 C CNN
+F 3 "" H 4450 8700 50  0001 C CNN
+	1    4450 8700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 8650 4450 8700
+$Comp
+L Motor:Motor_DC P2
+U 1 1 5EEB29E8
+P 5700 12750
+F 0 "P2" H 5858 12746 50  0000 L CNN
+F 1 "Pump_Motor_DC" H 5858 12655 50  0000 L CNN
+F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 5700 12660 50  0001 C CNN
+F 3 "~" H 5700 12660 50  0001 C CNN
+	1    5700 12750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 8550 4050 8550
+Wire Wire Line
+	4250 6350 4250 8550
+Wire Wire Line
+	4250 6350 4250 5900
+Connection ~ 4250 6350
+Wire Wire Line
+	4050 6350 4250 6350
+Wire Wire Line
+	4050 6450 4600 6450
+Wire Wire Line
+	5700 1550 5700 1750
+Wire Wire Line
+	5800 2900 4700 2900
+Wire Wire Line
+	4700 2900 4700 6550
+Wire Wire Line
+	4700 6550 4050 6550
+Wire Wire Line
+	4050 6650 4800 6650
+Wire Wire Line
+	4800 6650 4800 3550
+Wire Wire Line
+	4800 3550 7450 3550
+Wire Wire Line
+	5800 3950 4900 3950
+Wire Wire Line
+	4900 3950 4900 6750
+Wire Wire Line
+	4900 6750 4050 6750
+Wire Wire Line
+	4050 6850 5000 6850
+Wire Wire Line
+	5000 6850 5000 4650
+Wire Wire Line
+	5000 4650 7450 4650
+Wire Wire Line
+	5800 5050 5100 5050
+Wire Wire Line
+	5100 5050 5100 6950
+Wire Wire Line
+	5100 6950 4050 6950
+Wire Wire Line
+	4050 7050 5200 7050
+Wire Wire Line
+	5200 7050 5200 5750
+Wire Wire Line
+	5200 5750 7450 5750
+$Comp
+L power:+5V #PWR0132
+U 1 1 5ED805AB
+P 5700 7750
+F 0 "#PWR0132" H 5700 7600 50  0001 C CNN
+F 1 "+5V" H 5715 7923 50  0000 C CNN
+F 2 "" H 5700 7750 50  0001 C CNN
+F 3 "" H 5700 7750 50  0001 C CNN
+	1    5700 7750
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5E99CD90
+P 5700 7150
+F 0 "#PWR0104" H 5700 6900 50  0001 C CNN
+F 1 "GND" H 5705 6977 50  0000 C CNN
+F 2 "" H 5700 7150 50  0001 C CNN
+F 3 "" H 5700 7150 50  0001 C CNN
+	1    5700 7150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Sensor:DHT11 U1
+U 1 1 5E99BB61
+P 5700 7450
+F 0 "U1" H 5456 7496 50  0000 R CNN
+F 1 "DHT22" H 5456 7405 50  0000 R CNN
+F 2 "Sensor:Aosong_DHT11_5.5x12.0_P2.54mm" H 5700 7050 50  0001 C CNN
+F 3 "https://www.sparkfun.com/datasheets/Sensors/Temperature/DHT22.pdf" H 5850 7700 50  0001 C CNN
+	1    5700 7450
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0119
+U 1 1 5EA3D27E
+P 7350 7200
+F 0 "#PWR0119" H 7350 6950 50  0001 C CNN
+F 1 "GND" H 7355 7027 50  0000 C CNN
+F 2 "" H 7350 7200 50  0001 C CNN
+F 3 "" H 7350 7200 50  0001 C CNN
+	1    7350 7200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 6150 5300 6150
+Wire Wire Line
+	5300 6150 5300 7150
+Wire Wire Line
+	5300 7150 4050 7150
+Wire Wire Line
+	4600 1550 5700 1550
+Wire Wire Line
+	4050 7450 5400 7450
+Wire Wire Line
+	4050 7350 5400 7350
+$Comp
+L power:+5V #PWR0128
+U 1 1 5ED627D3
+P 7350 6600
+F 0 "#PWR0128" H 7350 6450 50  0001 C CNN
+F 1 "+5V" H 7365 6773 50  0000 C CNN
+F 2 "" H 7350 6600 50  0001 C CNN
+F 3 "" H 7350 6600 50  0001 C CNN
+	1    7350 6600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 8000 6850 8000
+$Comp
+L power:+5V #PWR0129
+U 1 1 5ED66311
+P 7350 7700
+F 0 "#PWR0129" H 7350 7550 50  0001 C CNN
+F 1 "+5V" H 7365 7873 50  0000 C CNN
+F 2 "" H 7350 7700 50  0001 C CNN
+F 3 "" H 7350 7700 50  0001 C CNN
+	1    7350 7700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0118
+U 1 1 5EA3D26B
+P 7350 8300
+F 0 "#PWR0118" H 7350 8050 50  0001 C CNN
+F 1 "GND" H 7355 8127 50  0000 C CNN
+F 2 "" H 7350 8300 50  0001 C CNN
+F 3 "" H 7350 8300 50  0001 C CNN
+	1    7350 8300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Sensor_Temperature:DS18B20 T2
+U 1 1 5EA3D25F
+P 7350 8000
+F 0 "T2" H 7120 8046 50  0000 R CNN
+F 1 "DS18B20" H 7120 7955 50  0000 R CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 6350 7750 50  0001 C CNN
+F 3 "http://datasheets.maximintegrated.com/en/ds/DS18B20.pdf" H 7200 8250 50  0001 C CNN
+	1    7350 8000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Sensor_Temperature:DS18B20 T1
+U 1 1 5EA3D272
+P 7350 6900
+F 0 "T1" H 7120 6946 50  0000 R CNN
+F 1 "DS18B20" H 7120 6855 50  0000 R CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 6350 6650 50  0001 C CNN
+F 3 "http://datasheets.maximintegrated.com/en/ds/DS18B20.pdf" H 7200 7150 50  0001 C CNN
+	1    7350 6900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 6900 6850 6900
+Wire Wire Line
+	5400 6900 5400 7350
+Wire Wire Line
+	6850 8000 6850 6900
+Connection ~ 6850 6900
+Wire Wire Line
+	6850 6900 5400 6900
+Wire Wire Line
+	4600 8450 4600 12450
+Wire Wire Line
+	4600 12450 5700 12450
+Wire Wire Line
+	5700 12450 5700 12550
+Wire Wire Line
+	4050 8450 4600 8450
+Wire Wire Line
+	5800 11700 4700 11700
+Wire Wire Line
+	4700 11700 4700 8350
+Wire Wire Line
+	4700 8350 4050 8350
+Wire Wire Line
+	4050 8250 4800 8250
+Wire Wire Line
+	4800 8250 4800 11300
+Wire Wire Line
+	4800 11300 7450 11300
+Wire Wire Line
+	5800 10600 4900 10600
+Wire Wire Line
+	4900 10600 4900 8150
+Wire Wire Line
+	4900 8150 4050 8150
+Wire Wire Line
+	4050 8050 5000 8050
+Wire Wire Line
+	5000 8050 5000 10200
+Wire Wire Line
+	5000 10200 7450 10200
+Wire Wire Line
+	5800 9500 5100 9500
+Wire Wire Line
+	5100 9500 5100 7950
+Wire Wire Line
+	5100 7950 4050 7950
+Wire Wire Line
+	4050 7850 5200 7850
+Wire Wire Line
+	5200 7850 5200 9100
+Wire Wire Line
+	5200 9100 7450 9100
+Wire Wire Line
+	5800 8450 5300 8450
+Wire Wire Line
+	5300 8450 5300 7750
+Wire Wire Line
+	5300 7750 4050 7750
+Wire Wire Line
+	4600 1550 4600 6450
+$Comp
+L Device:LED D1
+U 1 1 5E9C0B84
+P 8650 7350
+F 0 "D1" V 8750 7550 50  0000 C CNN
+F 1 "LED" V 8650 7550 50  0000 C CNN
+F 2 "LED_SMD:LED_0402_1005Metric" H 8650 7350 50  0001 C CNN
+F 3 "~" H 8650 7350 50  0001 C CNN
+	1    8650 7350
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0117
+U 1 1 5E9D9B5C
+P 8650 7200
+F 0 "#PWR0117" H 8650 7050 50  0001 C CNN
+F 1 "+5V" H 8665 7373 50  0000 C CNN
+F 2 "" H 8650 7200 50  0001 C CNN
+F 3 "" H 8650 7200 50  0001 C CNN
+	1    8650 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0120
+U 1 1 5E9DA179
+P 8650 7800
+F 0 "#PWR0120" H 8650 7550 50  0001 C CNN
+F 1 "GND" H 8655 7627 50  0000 C CNN
+F 2 "" H 8650 7800 50  0001 C CNN
+F 3 "" H 8650 7800 50  0001 C CNN
+	1    8650 7800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R330
+U 1 1 5E9DAD14
+P 8650 7650
+F 0 "R330" H 8720 7696 50  0000 L CNN
+F 1 "R" H 8720 7605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 8580 7650 50  0001 C CNN
+F 3 "~" H 8650 7650 50  0001 C CNN
+	1    8650 7650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0121
+U 1 1 5E9EF319
+P 9300 7800
+F 0 "#PWR0121" H 9300 7550 50  0001 C CNN
+F 1 "GND" H 9305 7627 50  0000 C CNN
+F 2 "" H 9300 7800 50  0001 C CNN
+F 3 "" H 9300 7800 50  0001 C CNN
+	1    9300 7800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0122
+U 1 1 5E9F98B1
+P 9300 7200
+F 0 "#PWR0122" H 9300 7050 50  0001 C CNN
+F 1 "+12V" H 9315 7373 50  0000 C CNN
+F 2 "" H 9300 7200 50  0001 C CNN
+F 3 "" H 9300 7200 50  0001 C CNN
+	1    9300 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R820
+U 1 1 5E9EF31F
+P 9300 7650
+F 0 "R820" H 9370 7696 50  0000 L CNN
+F 1 "R" H 9370 7605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9230 7650 50  0001 C CNN
+F 3 "~" H 9300 7650 50  0001 C CNN
+	1    9300 7650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5E9EF30D
+P 9300 7350
+F 0 "D2" V 9400 7550 50  0000 C CNN
+F 1 "LED" V 9300 7550 50  0000 C CNN
+F 2 "LED_SMD:LED_0402_1005Metric" H 9300 7350 50  0001 C CNN
+F 3 "~" H 9300 7350 50  0001 C CNN
+	1    9300 7350
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC
