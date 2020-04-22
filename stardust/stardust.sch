@@ -1,0 +1,1475 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title "Stardust Overview"
+Date "17 March 2020"
+Rev "2020/3/14"
+Comp "Stardust"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Timer_RTC:DS3231M U2
+U 1 1 5E94AEB7
+P 5250 3200
+F 0 "U2" H 4900 2800 50  0000 C CNN
+F 1 "DS3231M" H 4900 2700 50  0000 C CNN
+F 2 "Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm" H 5250 2600 50  0001 C CNN
+F 3 "http://datasheets.maximintegrated.com/en/ds/DS3231.pdf" H 5520 3250 50  0001 C CNN
+	1    5250 3200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 5E94BD7D
+P 4900 2750
+F 0 "BT1" H 4782 2754 50  0000 R CNN
+F 1 "Battery_Cell" H 4782 2845 50  0000 R CNN
+F 2 "" V 4900 2810 50  0001 C CNN
+F 3 "~" V 4900 2810 50  0001 C CNN
+	1    4900 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5E955BFD
+P 4700 2750
+F 0 "#PWR0102" H 4700 2500 50  0001 C CNN
+F 1 "GND" H 4705 2577 50  0000 C CNN
+F 2 "" H 4700 2750 50  0001 C CNN
+F 3 "" H 4700 2750 50  0001 C CNN
+	1    4700 2750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 2750 4700 2750
+Wire Wire Line
+	5750 3000 6050 3000
+Wire Wire Line
+	5750 3100 6050 3100
+Text Label 5850 3000 0    50   ~ 0
+PD0
+Text Label 5850 3100 0    50   ~ 0
+PD1
+$Comp
+L Sensor:DHT11 U7
+U 1 1 5E99BB61
+P 3950 5800
+F 0 "U7" H 3706 5846 50  0000 R CNN
+F 1 "DHT22" H 3706 5755 50  0000 R CNN
+F 2 "Sensor:Aosong_DHT22_5.5x12.0_P2.54mm" H 3950 5400 50  0001 C CNN
+F 3 "https://www.sparkfun.com/datasheets/Sensors/Temperature/DHT22.pdf" H 4100 6050 50  0001 C CNN
+	1    3950 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5E99CD90
+P 3950 6100
+F 0 "#PWR0104" H 3950 5850 50  0001 C CNN
+F 1 "GND" H 3955 5927 50  0000 C CNN
+F 2 "" H 3950 6100 50  0001 C CNN
+F 3 "" H 3950 6100 50  0001 C CNN
+	1    3950 6100
+	1    0    0    -1  
+$EndComp
+Text GLabel 4250 5800 2    50   Input ~ 0
+DHT22-1
+Text GLabel 5550 4600 2    50   Input ~ 0
+1Wire
+$Comp
+L Sensor_Temperature:DS18B20 U6
+U 1 1 5E986779
+P 5250 4600
+F 0 "U6" H 5020 4646 50  0000 R CNN
+F 1 "DS18B20" H 5020 4555 50  0000 R CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4250 4350 50  0001 C CNN
+F 3 "http://datasheets.maximintegrated.com/en/ds/DS18B20.pdf" H 5100 4850 50  0001 C CNN
+	1    5250 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 5E98420F
+P 5250 4900
+F 0 "#PWR0116" H 5250 4650 50  0001 C CNN
+F 1 "GND" H 5255 4727 50  0000 C CNN
+F 2 "" H 5250 4900 50  0001 C CNN
+F 3 "" H 5250 4900 50  0001 C CNN
+	1    5250 4900
+	1    0    0    -1  
+$EndComp
+Text GLabel 4250 4600 2    50   Input ~ 0
+1Wire
+$Comp
+L Sensor_Temperature:DS18B20 U5
+U 1 1 5EA30A4E
+P 3950 4600
+F 0 "U5" H 3720 4646 50  0000 R CNN
+F 1 "DS18B20" H 3720 4555 50  0000 R CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2950 4350 50  0001 C CNN
+F 3 "http://datasheets.maximintegrated.com/en/ds/DS18B20.pdf" H 3800 4850 50  0001 C CNN
+	1    3950 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 5EA30A5A
+P 3950 4900
+F 0 "#PWR0117" H 3950 4650 50  0001 C CNN
+F 1 "GND" H 3955 4727 50  0000 C CNN
+F 2 "" H 3950 4900 50  0001 C CNN
+F 3 "" H 3950 4900 50  0001 C CNN
+	1    3950 4900
+	1    0    0    -1  
+$EndComp
+Text GLabel 2950 4600 2    50   Input ~ 0
+1Wire
+$Comp
+L Sensor_Temperature:DS18B20 U4
+U 1 1 5EA3D25F
+P 2650 4600
+F 0 "U4" H 2420 4646 50  0000 R CNN
+F 1 "DS18B20" H 2420 4555 50  0000 R CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 1650 4350 50  0001 C CNN
+F 3 "http://datasheets.maximintegrated.com/en/ds/DS18B20.pdf" H 2500 4850 50  0001 C CNN
+	1    2650 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0118
+U 1 1 5EA3D26B
+P 2650 4900
+F 0 "#PWR0118" H 2650 4650 50  0001 C CNN
+F 1 "GND" H 2655 4727 50  0000 C CNN
+F 2 "" H 2650 4900 50  0001 C CNN
+F 3 "" H 2650 4900 50  0001 C CNN
+	1    2650 4900
+	1    0    0    -1  
+$EndComp
+Text GLabel 1650 4600 2    50   Input ~ 0
+1Wire
+$Comp
+L Sensor_Temperature:DS18B20 U3
+U 1 1 5EA3D272
+P 1350 4600
+F 0 "U3" H 1120 4646 50  0000 R CNN
+F 1 "DS18B20" H 1120 4555 50  0000 R CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 350 4350 50  0001 C CNN
+F 3 "http://datasheets.maximintegrated.com/en/ds/DS18B20.pdf" H 1200 4850 50  0001 C CNN
+	1    1350 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0119
+U 1 1 5EA3D27E
+P 1350 4900
+F 0 "#PWR0119" H 1350 4650 50  0001 C CNN
+F 1 "GND" H 1355 4727 50  0000 C CNN
+F 2 "" H 1350 4900 50  0001 C CNN
+F 3 "" H 1350 4900 50  0001 C CNN
+	1    1350 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Sensor:DHT11 U8
+U 1 1 5EA411E4
+P 5250 5800
+F 0 "U8" H 5006 5846 50  0000 R CNN
+F 1 "DHT22" H 5006 5755 50  0000 R CNN
+F 2 "Sensor:Aosong_DHT22_5.5x12.0_P2.54mm" H 5250 5400 50  0001 C CNN
+F 3 "https://www.sparkfun.com/datasheets/Sensors/Temperature/DHT22.pdf" H 5400 6050 50  0001 C CNN
+	1    5250 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0120
+U 1 1 5EA411EA
+P 5250 6100
+F 0 "#PWR0120" H 5250 5850 50  0001 C CNN
+F 1 "GND" H 5255 5927 50  0000 C CNN
+F 2 "" H 5250 6100 50  0001 C CNN
+F 3 "" H 5250 6100 50  0001 C CNN
+	1    5250 6100
+	1    0    0    -1  
+$EndComp
+Text GLabel 5550 5800 2    50   Input ~ 0
+DHT22-2
+$Comp
+L Sensor_Pressure:MS5607-02BA U9
+U 1 1 5EA6EE10
+P 5250 7100
+F 0 "U9" H 5580 7146 50  0000 L CNN
+F 1 "SSCDRNN015PASA5" H 5580 7055 50  0000 L CNN
+F 2 "Package_LGA:LGA-8_3x5mm_P1.25mm" H 5250 7100 50  0001 C CNN
+F 3 "https://sensing.honeywell.com/index.php?ci_id=151134" H 5250 7100 50  0001 C CNN
+	1    5250 7100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0121
+U 1 1 5EA70C45
+P 5250 6700
+F 0 "#PWR0121" H 5250 6550 50  0001 C CNN
+F 1 "VCC" H 5267 6873 50  0000 C CNN
+F 2 "" H 5250 6700 50  0001 C CNN
+F 3 "" H 5250 6700 50  0001 C CNN
+	1    5250 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0122
+U 1 1 5EA710CD
+P 5250 7500
+F 0 "#PWR0122" H 5250 7250 50  0001 C CNN
+F 1 "GND" H 5255 7327 50  0000 C CNN
+F 2 "" H 5250 7500 50  0001 C CNN
+F 3 "" H 5250 7500 50  0001 C CNN
+	1    5250 7500
+	1    0    0    -1  
+$EndComp
+Text GLabel 5650 7200 2    50   Input ~ 0
+SPI
+Text GLabel 5650 7100 2    50   Input ~ 0
+SPI
+Text GLabel 5650 7000 2    50   Input ~ 0
+SPI
+Text GLabel 6050 3000 2    50   Input ~ 0
+I2C
+Text GLabel 6050 3100 2    50   Input ~ 0
+I2C
+$Comp
+L Regulator_Switching:LM2596S-12 U11
+U 1 1 5EB194F9
+P 4650 8800
+F 0 "U11" H 4650 9167 50  0000 C CNN
+F 1 "LM2596S-12" H 4650 9076 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-263-5_TabPin3" H 4700 8550 50  0001 L CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2596.pdf" H 4650 8800 50  0001 C CNN
+	1    4650 8800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0123
+U 1 1 5EB21A5E
+P 4650 9100
+F 0 "#PWR0123" H 4650 8850 50  0001 C CNN
+F 1 "GND" H 4655 8927 50  0000 C CNN
+F 2 "" H 4650 9100 50  0001 C CNN
+F 3 "" H 4650 9100 50  0001 C CNN
+	1    4650 9100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 2750 5250 2800
+$Comp
+L power:GND #PWR0124
+U 1 1 5E955680
+P 5250 3600
+F 0 "#PWR0124" H 5250 3350 50  0001 C CNN
+F 1 "GND" H 5255 3427 50  0000 C CNN
+F 2 "" H 5250 3600 50  0001 C CNN
+F 3 "" H 5250 3600 50  0001 C CNN
+	1    5250 3600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0125
+U 1 1 5EB214CC
+P 2450 9100
+F 0 "#PWR0125" H 2450 8850 50  0001 C CNN
+F 1 "GND" H 2455 8927 50  0000 C CNN
+F 2 "" H 2450 9100 50  0001 C CNN
+F 3 "" H 2450 9100 50  0001 C CNN
+	1    2450 9100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Switching:LM2596S-5 U10
+U 1 1 5EB16117
+P 2450 8800
+F 0 "U10" H 2450 9167 50  0000 C CNN
+F 1 "LM2596S-5" H 2450 9076 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-263-5_TabPin3" H 2500 8550 50  0001 L CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2596.pdf" H 2450 8800 50  0001 C CNN
+	1    2450 8800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0128
+U 1 1 5ED627D3
+P 1350 4300
+F 0 "#PWR0128" H 1350 4150 50  0001 C CNN
+F 1 "+5V" H 1365 4473 50  0000 C CNN
+F 2 "" H 1350 4300 50  0001 C CNN
+F 3 "" H 1350 4300 50  0001 C CNN
+	1    1350 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0129
+U 1 1 5ED66311
+P 2650 4300
+F 0 "#PWR0129" H 2650 4150 50  0001 C CNN
+F 1 "+5V" H 2665 4473 50  0000 C CNN
+F 2 "" H 2650 4300 50  0001 C CNN
+F 3 "" H 2650 4300 50  0001 C CNN
+	1    2650 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0130
+U 1 1 5ED6BA9D
+P 3950 4300
+F 0 "#PWR0130" H 3950 4150 50  0001 C CNN
+F 1 "+5V" H 3965 4473 50  0000 C CNN
+F 2 "" H 3950 4300 50  0001 C CNN
+F 3 "" H 3950 4300 50  0001 C CNN
+	1    3950 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0131
+U 1 1 5ED7160B
+P 5250 4300
+F 0 "#PWR0131" H 5250 4150 50  0001 C CNN
+F 1 "+5V" H 5265 4473 50  0000 C CNN
+F 2 "" H 5250 4300 50  0001 C CNN
+F 3 "" H 5250 4300 50  0001 C CNN
+	1    5250 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0132
+U 1 1 5ED805AB
+P 3950 5500
+F 0 "#PWR0132" H 3950 5350 50  0001 C CNN
+F 1 "+5V" H 3965 5673 50  0000 C CNN
+F 2 "" H 3950 5500 50  0001 C CNN
+F 3 "" H 3950 5500 50  0001 C CNN
+	1    3950 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0133
+U 1 1 5ED85E4E
+P 5250 5500
+F 0 "#PWR0133" H 5250 5350 50  0001 C CNN
+F 1 "+5V" H 5265 5673 50  0000 C CNN
+F 2 "" H 5250 5500 50  0001 C CNN
+F 3 "" H 5250 5500 50  0001 C CNN
+	1    5250 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0134
+U 1 1 5ED92911
+P 5350 2800
+F 0 "#PWR0134" H 5350 2650 50  0001 C CNN
+F 1 "+5V" H 5365 2973 50  0000 C CNN
+F 2 "" H 5350 2800 50  0001 C CNN
+F 3 "" H 5350 2800 50  0001 C CNN
+	1    5350 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Relay_SolidState:34.81-9024 U12
+U 1 1 5EE63649
+P 7000 9800
+F 0 "U12" H 7000 10125 50  0000 C CNN
+F 1 "34.81-9024" H 7000 10034 50  0000 C CNN
+F 2 "OptoDevice:Finder_34.81" H 6800 9600 50  0001 L CIN
+F 3 "http://www.us.liteon.com/downloads/LTV-817-827-847.PDF" H 7000 9800 50  0001 L CNN
+	1    7000 9800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 9900 6500 9900
+Wire Wire Line
+	6500 9900 6500 10100
+$Comp
+L power:GND #PWR0148
+U 1 1 5EE69EF0
+P 6500 10100
+F 0 "#PWR0148" H 6500 9850 50  0001 C CNN
+F 1 "GND" H 6505 9927 50  0000 C CNN
+F 2 "" H 6500 10100 50  0001 C CNN
+F 3 "" H 6500 10100 50  0001 C CNN
+	1    6500 10100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 9700 6500 9700
+$Comp
+L Motor:Motor_DC M1
+U 1 1 5EE707F5
+P 7500 10100
+F 0 "M1" H 7658 10096 50  0000 L CNN
+F 1 "Pump_Motor_DC" H 7658 10005 50  0000 L CNN
+F 2 "" H 7500 10010 50  0001 C CNN
+F 3 "~" H 7500 10010 50  0001 C CNN
+	1    7500 10100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 9900 7300 9900
+$Comp
+L power:+12V #PWR0149
+U 1 1 5EE83FED
+P 7500 9400
+F 0 "#PWR0149" H 7500 9250 50  0001 C CNN
+F 1 "+12V" H 7515 9573 50  0000 C CNN
+F 2 "" H 7500 9400 50  0001 C CNN
+F 3 "" H 7500 9400 50  0001 C CNN
+	1    7500 9400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0150
+U 1 1 5EE90E71
+P 7500 10400
+F 0 "#PWR0150" H 7500 10150 50  0001 C CNN
+F 1 "GND" H 7505 10227 50  0000 C CNN
+F 2 "" H 7500 10400 50  0001 C CNN
+F 3 "" H 7500 10400 50  0001 C CNN
+	1    7500 10400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 9700 7500 9400
+Wire Wire Line
+	7300 9700 7500 9700
+Text GLabel 6500 9700 0    50   Input ~ 0
+Pump-1
+$Comp
+L Relay_SolidState:34.81-9024 U13
+U 1 1 5EEB29D9
+P 9000 9800
+F 0 "U13" H 9000 10125 50  0000 C CNN
+F 1 "34.81-9024" H 9000 10034 50  0000 C CNN
+F 2 "OptoDevice:Finder_34.81" H 8800 9600 50  0001 L CIN
+F 3 "http://www.us.liteon.com/downloads/LTV-817-827-847.PDF" H 9000 9800 50  0001 L CNN
+	1    9000 9800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 9900 8500 9900
+Wire Wire Line
+	8500 9900 8500 10100
+$Comp
+L power:GND #PWR0151
+U 1 1 5EEB29E1
+P 8500 10100
+F 0 "#PWR0151" H 8500 9850 50  0001 C CNN
+F 1 "GND" H 8505 9927 50  0000 C CNN
+F 2 "" H 8500 10100 50  0001 C CNN
+F 3 "" H 8500 10100 50  0001 C CNN
+	1    8500 10100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 9700 8500 9700
+$Comp
+L Motor:Motor_DC M2
+U 1 1 5EEB29E8
+P 9500 10100
+F 0 "M2" H 9658 10096 50  0000 L CNN
+F 1 "Pump_Motor_DC" H 9658 10005 50  0000 L CNN
+F 2 "" H 9500 10010 50  0001 C CNN
+F 3 "~" H 9500 10010 50  0001 C CNN
+	1    9500 10100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 9900 9300 9900
+$Comp
+L power:+12V #PWR0152
+U 1 1 5EEB29EF
+P 9500 9400
+F 0 "#PWR0152" H 9500 9250 50  0001 C CNN
+F 1 "+12V" H 9515 9573 50  0000 C CNN
+F 2 "" H 9500 9400 50  0001 C CNN
+F 3 "" H 9500 9400 50  0001 C CNN
+	1    9500 9400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0153
+U 1 1 5EEB29F5
+P 9500 10400
+F 0 "#PWR0153" H 9500 10150 50  0001 C CNN
+F 1 "GND" H 9505 10227 50  0000 C CNN
+F 2 "" H 9500 10400 50  0001 C CNN
+F 3 "" H 9500 10400 50  0001 C CNN
+	1    9500 10400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 9700 9500 9400
+Wire Wire Line
+	9300 9700 9500 9700
+Text GLabel 8500 9700 0    50   Input ~ 0
+Pump-2
+Wire Wire Line
+	5650 6900 6000 6900
+Wire Wire Line
+	6000 6900 6000 7000
+$Comp
+L power:GND #PWR0154
+U 1 1 5EEF4069
+P 6000 7000
+F 0 "#PWR0154" H 6000 6750 50  0001 C CNN
+F 1 "GND" H 6005 6827 50  0000 C CNN
+F 2 "" H 6000 7000 50  0001 C CNN
+F 3 "" H 6000 7000 50  0001 C CNN
+	1    6000 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 2750 5100 2750
+Wire Wire Line
+	4150 8700 3850 8700
+Wire Wire Line
+	3850 8700 3850 8400
+Wire Wire Line
+	1600 8700 1600 8400
+Wire Wire Line
+	1600 8700 1950 8700
+$Comp
+L power:+28V #PWR0155
+U 1 1 5EFB7715
+P 1600 8400
+F 0 "#PWR0155" H 1600 8250 50  0001 C CNN
+F 1 "+28V" H 1615 8573 50  0000 C CNN
+F 2 "" H 1850 8450 50  0001 C CNN
+F 3 "" H 1850 8450 50  0001 C CNN
+	1    1600 8400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+28V #PWR0156
+U 1 1 5EFB80BF
+P 3850 8400
+F 0 "#PWR0156" H 3850 8250 50  0001 C CNN
+F 1 "+28V" H 3865 8573 50  0000 C CNN
+F 2 "" H 4100 8450 50  0001 C CNN
+F 3 "" H 4100 8450 50  0001 C CNN
+	1    3850 8400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0157
+U 1 1 5EFBA217
+P 1850 9100
+F 0 "#PWR0157" H 1850 8850 50  0001 C CNN
+F 1 "GND" H 1855 8927 50  0000 C CNN
+F 2 "" H 1850 9100 50  0001 C CNN
+F 3 "" H 1850 9100 50  0001 C CNN
+	1    1850 9100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 8900 1850 8900
+Wire Wire Line
+	1850 8900 1850 9100
+$Comp
+L power:GND #PWR0158
+U 1 1 5EFC47D3
+P 4050 9100
+F 0 "#PWR0158" H 4050 8850 50  0001 C CNN
+F 1 "GND" H 4055 8927 50  0000 C CNN
+F 2 "" H 4050 9100 50  0001 C CNN
+F 3 "" H 4050 9100 50  0001 C CNN
+	1    4050 9100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 8900 4050 8900
+Wire Wire Line
+	4050 8900 4050 9100
+$Comp
+L power:+12V #PWR0147
+U 1 1 5EE249D1
+P 5450 8400
+F 0 "#PWR0147" H 5450 8250 50  0001 C CNN
+F 1 "+12V" H 5465 8573 50  0000 C CNN
+F 2 "" H 5450 8400 50  0001 C CNN
+F 3 "" H 5450 8400 50  0001 C CNN
+	1    5450 8400
+	1    0    0    -1  
+$EndComp
+Text Label 5350 8900 2    50   ~ 0
+12V
+Wire Wire Line
+	5450 8900 5450 8400
+Wire Wire Line
+	5150 8900 5450 8900
+$Comp
+L power:+5V #PWR0146
+U 1 1 5EE1F03B
+P 3250 8400
+F 0 "#PWR0146" H 3250 8250 50  0001 C CNN
+F 1 "+5V" H 3265 8573 50  0000 C CNN
+F 2 "" H 3250 8400 50  0001 C CNN
+F 3 "" H 3250 8400 50  0001 C CNN
+	1    3250 8400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 8900 3250 8900
+Wire Wire Line
+	3250 8900 3250 8400
+Text Label 3150 8900 2    50   ~ 0
+5V
+Text GLabel 5650 7300 2    50   Input ~ 0
+SPI-SS-Pressure
+Wire Wire Line
+	8800 4500 9100 4500
+Wire Wire Line
+	8800 4400 9100 4400
+Wire Wire Line
+	8800 4300 9100 4300
+Wire Wire Line
+	8800 4200 9100 4200
+Text Label 8850 4200 0    50   ~ 0
+GPIO
+Text Label 8850 4300 0    50   ~ 0
+pwm
+Text Label 8850 4400 0    50   ~ 0
+pwm
+Text Label 8850 4500 0    50   ~ 0
+pwm
+Wire Wire Line
+	9100 6800 8800 6800
+Wire Wire Line
+	9100 6900 8800 6900
+$Comp
+L MCU_Microchip_ATmega:ATmega2560-16CU U1
+U 1 1 5E8F8541
+P 8000 5500
+F 0 "U1" H 7500 2600 50  0000 C CNN
+F 1 "ATmega2560-16CU" H 7500 2450 50  0000 C CNN
+F 2 "Package_BGA:TFBGA-100_9.0x9.0mm_Layout10x10_P0.8mm" H 8000 5500 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-2549-8-bit-AVR-Microcontroller-ATmega640-1280-1281-2560-2561_datasheet.pdf" H 6850 8300 50  0001 C CNN
+	1    8000 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 7900 6900 7900
+Wire Wire Line
+	8800 7000 9100 7000
+Wire Wire Line
+	7200 7100 6900 7100
+Wire Wire Line
+	7200 7000 6900 7000
+Wire Wire Line
+	6900 6900 7200 6900
+Wire Wire Line
+	7200 6800 6900 6800
+Wire Wire Line
+	6900 4300 7200 4300
+Wire Wire Line
+	6900 4200 7200 4200
+Wire Wire Line
+	6900 4100 7200 4100
+Text Label 7000 4100 0    50   ~ 0
+pwm
+Text Label 7000 4200 0    50   ~ 0
+pwm
+Text Label 7000 4300 0    50   ~ 0
+pwm
+Text Label 7000 6800 0    50   ~ 0
+pwm
+Text Label 7000 6900 0    50   ~ 0
+pwm
+Text Label 7000 7000 0    50   ~ 0
+pwm
+Text Label 7000 7100 0    50   ~ 0
+pwm
+Text Label 7000 7900 0    50   ~ 0
+pwm
+Text Label 8850 6800 0    50   ~ 0
+pwm
+Text Label 8850 6900 0    50   ~ 0
+pwm
+Text Label 8850 7000 0    50   ~ 0
+pwm
+Wire Wire Line
+	8800 5600 9100 5600
+Wire Wire Line
+	8800 5700 9100 5700
+Text Label 8850 5600 0    50   ~ 0
+SCL
+Text Label 8850 5700 0    50   ~ 0
+SDA
+Text Label 8850 4000 0    50   ~ 0
+MOSI
+Text Label 8850 4100 0    50   ~ 0
+MISO
+Text Label 9000 3900 2    50   ~ 0
+SCK
+Text Label 8950 3800 2    50   ~ 0
+SS
+$Comp
+L power:GND #PWR0103
+U 1 1 5E977F69
+P 8000 8400
+F 0 "#PWR0103" H 8000 8150 50  0001 C CNN
+F 1 "GND" H 8005 8227 50  0000 C CNN
+F 2 "" H 8000 8400 50  0001 C CNN
+F 3 "" H 8000 8400 50  0001 C CNN
+	1    8000 8400
+	1    0    0    -1  
+$EndComp
+Text GLabel 9100 5600 2    50   Input ~ 0
+I2C
+Text GLabel 9100 5700 2    50   Input ~ 0
+I2C
+Wire Wire Line
+	8800 4100 9100 4100
+Wire Wire Line
+	8800 4000 9100 4000
+Wire Wire Line
+	8800 3900 9100 3900
+Wire Wire Line
+	8800 3800 9100 3800
+Text GLabel 9100 3900 2    50   Input ~ 0
+SPI
+Text GLabel 9100 4000 2    50   Input ~ 0
+SPI
+Text GLabel 9100 4100 2    50   Input ~ 0
+SPI
+Text GLabel 9100 4200 2    50   Input ~ 0
+SPI-SS-Ethernet
+Wire Wire Line
+	8800 6000 9100 6000
+Text GLabel 9100 6000 2    50   Input ~ 0
+SPI-SS-SDCard
+Text Label 8850 6000 0    50   ~ 0
+GPIO
+Wire Wire Line
+	8800 2900 9100 2900
+Wire Wire Line
+	8800 3000 9100 3000
+Wire Wire Line
+	8800 3200 9100 3200
+Wire Wire Line
+	8800 3100 9100 3100
+Text GLabel 9100 2900 2    50   Input ~ 0
+DHT22-1
+Text GLabel 9100 3000 2    50   Input ~ 0
+DHT22-2
+Text Label 8850 2900 0    50   ~ 0
+GPIO
+Text Label 8850 3000 0    50   ~ 0
+GPIO
+Text Label 8850 3100 0    50   ~ 0
+GPIO
+Text Label 8850 3200 0    50   ~ 0
+GPIO
+Text GLabel 6900 4100 0    50   Input ~ 0
+PWM-1
+Text GLabel 6900 4200 0    50   Input ~ 0
+PWM-2
+Text GLabel 6900 4300 0    50   Input ~ 0
+PWM-3
+Text GLabel 6900 6800 0    50   Input ~ 0
+PWM-4
+Text GLabel 6900 6900 0    50   Input ~ 0
+PWM-5
+Text GLabel 6900 7000 0    50   Input ~ 0
+PWM-6
+Text GLabel 6900 7100 0    50   Input ~ 0
+PWM-7
+Text GLabel 6900 7900 0    50   Input ~ 0
+PWM-8
+Text GLabel 9100 6800 2    50   Input ~ 0
+PWM-9
+Text GLabel 9100 6900 2    50   Input ~ 0
+PWM-10
+Text GLabel 9100 7000 2    50   Input ~ 0
+PWM-11
+Text GLabel 9100 4300 2    50   Input ~ 0
+PWM-12
+Wire Wire Line
+	8800 7400 9100 7400
+Text Label 8850 7400 0    50   ~ 0
+ADC0
+Wire Wire Line
+	8800 7500 9100 7500
+Text Label 8850 7500 0    50   ~ 0
+ADC1
+Wire Wire Line
+	8800 7600 9100 7600
+Text Label 8850 7600 0    50   ~ 0
+ADC2
+Wire Wire Line
+	8800 7700 9100 7700
+Text Label 8850 7700 0    50   ~ 0
+ADC3
+Wire Wire Line
+	8800 7800 9100 7800
+Text Label 8850 7800 0    50   ~ 0
+ADC4
+Wire Wire Line
+	8800 7900 9100 7900
+Text Label 8850 7900 0    50   ~ 0
+ADC5
+Wire Wire Line
+	8800 8000 9100 8000
+Text Label 8850 8000 0    50   ~ 0
+ADC6
+Wire Wire Line
+	8800 8100 9100 8100
+Text Label 8850 8100 0    50   ~ 0
+ADC7
+Wire Wire Line
+	7200 6500 6900 6500
+Wire Wire Line
+	7200 6600 6900 6600
+Text Label 7150 6500 2    50   ~ 0
+RXD2
+Text Label 7150 6600 2    50   ~ 0
+TXD2
+Wire Wire Line
+	7200 5600 6900 5600
+Wire Wire Line
+	7200 5700 6900 5700
+Text Label 7150 5600 2    50   ~ 0
+RXD3
+Text Label 7150 5700 2    50   ~ 0
+TXD4
+Wire Wire Line
+	8800 5800 9100 5800
+Wire Wire Line
+	8800 5900 9100 5900
+Text Label 8850 5800 0    50   ~ 0
+RXD1
+Text Label 8850 5900 0    50   ~ 0
+TXD1
+Text Label 7150 4700 2    50   ~ 0
+ADC8
+Text Label 7150 4800 2    50   ~ 0
+ADC9
+Text Label 7150 4900 2    50   ~ 0
+ADC10
+Text Label 7150 5000 2    50   ~ 0
+ADC11
+Text Label 7150 5100 2    50   ~ 0
+ADC12
+Text Label 7150 5200 2    50   ~ 0
+ADC13
+Text Label 7150 5300 2    50   ~ 0
+ADC14
+Text Label 7150 5400 2    50   ~ 0
+ADC15
+Wire Wire Line
+	6800 5400 7200 5400
+Wire Wire Line
+	6800 5300 7200 5300
+Wire Wire Line
+	6800 5200 7200 5200
+Wire Wire Line
+	6800 5100 7200 5100
+Wire Wire Line
+	6800 5000 7200 5000
+Wire Wire Line
+	6800 4900 7200 4900
+Wire Wire Line
+	6800 4800 7200 4800
+Wire Wire Line
+	6800 4700 7200 4700
+Text GLabel 9100 3800 2    50   Input ~ 0
+SPI
+Wire Wire Line
+	8000 2600 8000 2550
+Wire Wire Line
+	8000 2550 8050 2550
+Wire Wire Line
+	8100 2550 8100 2600
+Wire Wire Line
+	8050 2550 8050 2450
+Connection ~ 8050 2550
+Wire Wire Line
+	8050 2550 8100 2550
+$Comp
+L power:+5V #PWR0126
+U 1 1 5ED439F8
+P 8050 2450
+F 0 "#PWR0126" H 8050 2300 50  0001 C CNN
+F 1 "+5V" H 8065 2623 50  0000 C CNN
+F 2 "" H 8050 2450 50  0001 C CNN
+F 3 "" H 8050 2450 50  0001 C CNN
+	1    8050 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 3300 9100 3300
+Text Label 8850 3300 0    50   ~ 0
+GPIO
+Wire Wire Line
+	8800 3400 9100 3400
+Text Label 8850 3400 0    50   ~ 0
+GPIO
+Text GLabel 9100 3100 2    50   Input ~ 0
+1Wire
+Text GLabel 9100 3400 2    50   Input ~ 0
+Pump-1
+Text GLabel 9100 3500 2    50   Input ~ 0
+Pump-2
+Text GLabel 9100 3300 2    50   Input ~ 0
+SPI-SS-Pressure
+Wire Wire Line
+	8800 3500 9100 3500
+Text Label 8850 3500 0    50   ~ 0
+GPIO
+Wire Wire Line
+	8800 3600 9100 3600
+Text Label 8850 3600 0    50   ~ 0
+GPIO
+$Comp
+L Motor:Motor_Servo_Hitec M-1
+U 1 1 5E90D286
+P 12900 2250
+F 0 "M-1" H 13232 2315 50  0000 L CNN
+F 1 "Motor_Servo_Hitec" H 13232 2224 50  0000 L CNN
+F 2 "" H 12900 2060 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 12900 2060 50  0001 C CNN
+	1    12900 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5E90D9ED
+P 12500 2500
+F 0 "#PWR0101" H 12500 2250 50  0001 C CNN
+F 1 "GND" H 12505 2327 50  0000 C CNN
+F 2 "" H 12500 2500 50  0001 C CNN
+F 3 "" H 12500 2500 50  0001 C CNN
+	1    12500 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12600 2350 12500 2350
+Wire Wire Line
+	12500 2350 12500 2500
+Wire Wire Line
+	12600 2250 12500 2250
+Wire Wire Line
+	12500 2250 12500 2000
+Wire Wire Line
+	12600 2150 12300 2150
+Text GLabel 12300 2150 0    50   Input ~ 0
+pwm-1
+$Comp
+L Motor:Motor_Servo_Hitec M-2
+U 1 1 5E9C596E
+P 11700 2750
+F 0 "M-2" H 12032 2815 50  0000 L CNN
+F 1 "Motor_Servo_Hitec" H 12032 2724 50  0000 L CNN
+F 2 "" H 11700 2560 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 11700 2560 50  0001 C CNN
+	1    11700 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5E9C5974
+P 11300 3000
+F 0 "#PWR0105" H 11300 2750 50  0001 C CNN
+F 1 "GND" H 11305 2827 50  0000 C CNN
+F 2 "" H 11300 3000 50  0001 C CNN
+F 3 "" H 11300 3000 50  0001 C CNN
+	1    11300 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11400 2850 11300 2850
+Wire Wire Line
+	11300 2850 11300 3000
+Wire Wire Line
+	11400 2750 11300 2750
+Wire Wire Line
+	11300 2750 11300 2500
+Wire Wire Line
+	11400 2650 11100 2650
+Text GLabel 11100 2650 0    50   Input ~ 0
+pwm-2
+$Comp
+L Motor:Motor_Servo_Hitec M-3
+U 1 1 5E9CF8F5
+P 12900 3350
+F 0 "M-3" H 13232 3415 50  0000 L CNN
+F 1 "Motor_Servo_Hitec" H 13232 3324 50  0000 L CNN
+F 2 "" H 12900 3160 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 12900 3160 50  0001 C CNN
+	1    12900 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5E9CF8FB
+P 12500 3600
+F 0 "#PWR0106" H 12500 3350 50  0001 C CNN
+F 1 "GND" H 12505 3427 50  0000 C CNN
+F 2 "" H 12500 3600 50  0001 C CNN
+F 3 "" H 12500 3600 50  0001 C CNN
+	1    12500 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12600 3450 12500 3450
+Wire Wire Line
+	12500 3450 12500 3600
+Wire Wire Line
+	12600 3350 12500 3350
+Wire Wire Line
+	12500 3350 12500 3100
+Wire Wire Line
+	12600 3250 12300 3250
+Text GLabel 12300 3250 0    50   Input ~ 0
+pwm-3
+$Comp
+L Motor:Motor_Servo_Hitec M-4
+U 1 1 5E9CF90D
+P 11700 3850
+F 0 "M-4" H 12032 3915 50  0000 L CNN
+F 1 "Motor_Servo_Hitec" H 12032 3824 50  0000 L CNN
+F 2 "" H 11700 3660 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 11700 3660 50  0001 C CNN
+	1    11700 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 5E9CF913
+P 11300 4100
+F 0 "#PWR0107" H 11300 3850 50  0001 C CNN
+F 1 "GND" H 11305 3927 50  0000 C CNN
+F 2 "" H 11300 4100 50  0001 C CNN
+F 3 "" H 11300 4100 50  0001 C CNN
+	1    11300 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11400 3950 11300 3950
+Wire Wire Line
+	11300 3950 11300 4100
+Wire Wire Line
+	11400 3850 11300 3850
+Wire Wire Line
+	11300 3850 11300 3600
+Wire Wire Line
+	11400 3750 11100 3750
+Text GLabel 11100 3750 0    50   Input ~ 0
+pwm-4
+$Comp
+L Motor:Motor_Servo_Hitec M-5
+U 1 1 5E9DCF9D
+P 12900 4450
+F 0 "M-5" H 13232 4515 50  0000 L CNN
+F 1 "Motor_Servo_Hitec" H 13232 4424 50  0000 L CNN
+F 2 "" H 12900 4260 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 12900 4260 50  0001 C CNN
+	1    12900 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5E9DCFA3
+P 12500 4700
+F 0 "#PWR0108" H 12500 4450 50  0001 C CNN
+F 1 "GND" H 12505 4527 50  0000 C CNN
+F 2 "" H 12500 4700 50  0001 C CNN
+F 3 "" H 12500 4700 50  0001 C CNN
+	1    12500 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12600 4550 12500 4550
+Wire Wire Line
+	12500 4550 12500 4700
+Wire Wire Line
+	12600 4450 12500 4450
+Wire Wire Line
+	12500 4450 12500 4200
+Wire Wire Line
+	12600 4350 12300 4350
+Text GLabel 12300 4350 0    50   Input ~ 0
+pwm-5
+$Comp
+L Motor:Motor_Servo_Hitec M-6
+U 1 1 5E9DCFB5
+P 11700 4950
+F 0 "M-6" H 12032 5015 50  0000 L CNN
+F 1 "Motor_Servo_Hitec" H 12032 4924 50  0000 L CNN
+F 2 "" H 11700 4760 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 11700 4760 50  0001 C CNN
+	1    11700 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 5E9DCFBB
+P 11300 5200
+F 0 "#PWR0109" H 11300 4950 50  0001 C CNN
+F 1 "GND" H 11305 5027 50  0000 C CNN
+F 2 "" H 11300 5200 50  0001 C CNN
+F 3 "" H 11300 5200 50  0001 C CNN
+	1    11300 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11400 5050 11300 5050
+Wire Wire Line
+	11300 5050 11300 5200
+Wire Wire Line
+	11400 4950 11300 4950
+Wire Wire Line
+	11300 4950 11300 4700
+Wire Wire Line
+	11400 4850 11100 4850
+Text GLabel 11100 4850 0    50   Input ~ 0
+pwm-6
+$Comp
+L Motor:Motor_Servo_Hitec M-7
+U 1 1 5E9DCFCD
+P 12900 5550
+F 0 "M-7" H 13232 5615 50  0000 L CNN
+F 1 "Motor_Servo_Hitec" H 13232 5524 50  0000 L CNN
+F 2 "" H 12900 5360 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 12900 5360 50  0001 C CNN
+	1    12900 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 5E9DCFD3
+P 12500 5800
+F 0 "#PWR0110" H 12500 5550 50  0001 C CNN
+F 1 "GND" H 12505 5627 50  0000 C CNN
+F 2 "" H 12500 5800 50  0001 C CNN
+F 3 "" H 12500 5800 50  0001 C CNN
+	1    12500 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12600 5650 12500 5650
+Wire Wire Line
+	12500 5650 12500 5800
+Wire Wire Line
+	12600 5550 12500 5550
+Wire Wire Line
+	12500 5550 12500 5300
+Wire Wire Line
+	12600 5450 12300 5450
+Text GLabel 12300 5450 0    50   Input ~ 0
+pwm-7
+$Comp
+L Motor:Motor_Servo_Hitec M-8
+U 1 1 5E9DCFE5
+P 11700 6050
+F 0 "M-8" H 12032 6115 50  0000 L CNN
+F 1 "Motor_Servo_Hitec" H 12032 6024 50  0000 L CNN
+F 2 "" H 11700 5860 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 11700 5860 50  0001 C CNN
+	1    11700 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 5E9DCFEB
+P 11300 6300
+F 0 "#PWR0111" H 11300 6050 50  0001 C CNN
+F 1 "GND" H 11305 6127 50  0000 C CNN
+F 2 "" H 11300 6300 50  0001 C CNN
+F 3 "" H 11300 6300 50  0001 C CNN
+	1    11300 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11400 6150 11300 6150
+Wire Wire Line
+	11300 6150 11300 6300
+Wire Wire Line
+	11400 6050 11300 6050
+Wire Wire Line
+	11300 6050 11300 5800
+Wire Wire Line
+	11400 5950 11100 5950
+Text GLabel 11100 5950 0    50   Input ~ 0
+pwm-8
+$Comp
+L Motor:Motor_Servo_Hitec M-9
+U 1 1 5E9E4EA2
+P 12900 6650
+F 0 "M-9" H 13232 6715 50  0000 L CNN
+F 1 "Motor_Servo_Hitec" H 13232 6624 50  0000 L CNN
+F 2 "" H 12900 6460 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 12900 6460 50  0001 C CNN
+	1    12900 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0112
+U 1 1 5E9E4EA8
+P 12500 6900
+F 0 "#PWR0112" H 12500 6650 50  0001 C CNN
+F 1 "GND" H 12505 6727 50  0000 C CNN
+F 2 "" H 12500 6900 50  0001 C CNN
+F 3 "" H 12500 6900 50  0001 C CNN
+	1    12500 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12600 6750 12500 6750
+Wire Wire Line
+	12500 6750 12500 6900
+Wire Wire Line
+	12600 6650 12500 6650
+Wire Wire Line
+	12500 6650 12500 6400
+Wire Wire Line
+	12600 6550 12300 6550
+Text GLabel 12300 6550 0    50   Input ~ 0
+pwm-9
+$Comp
+L Motor:Motor_Servo_Hitec M-10
+U 1 1 5E9E4EBA
+P 11700 7150
+F 0 "M-10" H 12032 7215 50  0000 L CNN
+F 1 "Motor_Servo_Hitec" H 12032 7124 50  0000 L CNN
+F 2 "" H 11700 6960 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 11700 6960 50  0001 C CNN
+	1    11700 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0113
+U 1 1 5E9E4EC0
+P 11300 7400
+F 0 "#PWR0113" H 11300 7150 50  0001 C CNN
+F 1 "GND" H 11305 7227 50  0000 C CNN
+F 2 "" H 11300 7400 50  0001 C CNN
+F 3 "" H 11300 7400 50  0001 C CNN
+	1    11300 7400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11400 7250 11300 7250
+Wire Wire Line
+	11300 7250 11300 7400
+Wire Wire Line
+	11400 7150 11300 7150
+Wire Wire Line
+	11300 7150 11300 6900
+Wire Wire Line
+	11400 7050 11100 7050
+Text GLabel 11100 7050 0    50   Input ~ 0
+pwm-10
+$Comp
+L Motor:Motor_Servo_Hitec M-11
+U 1 1 5E9E4ED2
+P 12900 7750
+F 0 "M-11" H 13232 7815 50  0000 L CNN
+F 1 "Motor_Servo_Hitec" H 13232 7724 50  0000 L CNN
+F 2 "" H 12900 7560 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 12900 7560 50  0001 C CNN
+	1    12900 7750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0114
+U 1 1 5E9E4ED8
+P 12500 8000
+F 0 "#PWR0114" H 12500 7750 50  0001 C CNN
+F 1 "GND" H 12505 7827 50  0000 C CNN
+F 2 "" H 12500 8000 50  0001 C CNN
+F 3 "" H 12500 8000 50  0001 C CNN
+	1    12500 8000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12600 7850 12500 7850
+Wire Wire Line
+	12500 7850 12500 8000
+Wire Wire Line
+	12600 7750 12500 7750
+Wire Wire Line
+	12500 7750 12500 7500
+Wire Wire Line
+	12600 7650 12300 7650
+Text GLabel 12300 7650 0    50   Input ~ 0
+pwm-11
+$Comp
+L Motor:Motor_Servo_Hitec M-12
+U 1 1 5E9E4EEA
+P 11700 8250
+F 0 "M-12" H 12032 8315 50  0000 L CNN
+F 1 "Motor_Servo_Hitec" H 12032 8224 50  0000 L CNN
+F 2 "" H 11700 8060 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 11700 8060 50  0001 C CNN
+	1    11700 8250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0115
+U 1 1 5E9E4EF0
+P 11300 8500
+F 0 "#PWR0115" H 11300 8250 50  0001 C CNN
+F 1 "GND" H 11305 8327 50  0000 C CNN
+F 2 "" H 11300 8500 50  0001 C CNN
+F 3 "" H 11300 8500 50  0001 C CNN
+	1    11300 8500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11400 8350 11300 8350
+Wire Wire Line
+	11300 8350 11300 8500
+Wire Wire Line
+	11400 8250 11300 8250
+Wire Wire Line
+	11300 8250 11300 8000
+Wire Wire Line
+	11400 8150 11100 8150
+Text GLabel 11100 8150 0    50   Input ~ 0
+pwm-12
+$Comp
+L power:+5V #PWR0127
+U 1 1 5ED4BD5C
+P 11300 2500
+F 0 "#PWR0127" H 11300 2350 50  0001 C CNN
+F 1 "+5V" H 11315 2673 50  0000 C CNN
+F 2 "" H 11300 2500 50  0001 C CNN
+F 3 "" H 11300 2500 50  0001 C CNN
+	1    11300 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0135
+U 1 1 5ED9B154
+P 12500 2000
+F 0 "#PWR0135" H 12500 1850 50  0001 C CNN
+F 1 "+5V" H 12515 2173 50  0000 C CNN
+F 2 "" H 12500 2000 50  0001 C CNN
+F 3 "" H 12500 2000 50  0001 C CNN
+	1    12500 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0136
+U 1 1 5EDA5ED6
+P 12500 3100
+F 0 "#PWR0136" H 12500 2950 50  0001 C CNN
+F 1 "+5V" H 12515 3273 50  0000 C CNN
+F 2 "" H 12500 3100 50  0001 C CNN
+F 3 "" H 12500 3100 50  0001 C CNN
+	1    12500 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0137
+U 1 1 5EDAB547
+P 11300 3600
+F 0 "#PWR0137" H 11300 3450 50  0001 C CNN
+F 1 "+5V" H 11315 3773 50  0000 C CNN
+F 2 "" H 11300 3600 50  0001 C CNN
+F 3 "" H 11300 3600 50  0001 C CNN
+	1    11300 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0138
+U 1 1 5EDE240E
+P 11300 8000
+F 0 "#PWR0138" H 11300 7850 50  0001 C CNN
+F 1 "+5V" H 11315 8173 50  0000 C CNN
+F 2 "" H 11300 8000 50  0001 C CNN
+F 3 "" H 11300 8000 50  0001 C CNN
+	1    11300 8000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0139
+U 1 1 5EDE7B73
+P 12500 7500
+F 0 "#PWR0139" H 12500 7350 50  0001 C CNN
+F 1 "+5V" H 12515 7673 50  0000 C CNN
+F 2 "" H 12500 7500 50  0001 C CNN
+F 3 "" H 12500 7500 50  0001 C CNN
+	1    12500 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0140
+U 1 1 5EDED2A0
+P 12500 6400
+F 0 "#PWR0140" H 12500 6250 50  0001 C CNN
+F 1 "+5V" H 12515 6573 50  0000 C CNN
+F 2 "" H 12500 6400 50  0001 C CNN
+F 3 "" H 12500 6400 50  0001 C CNN
+	1    12500 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0141
+U 1 1 5EDF2A61
+P 11300 6900
+F 0 "#PWR0141" H 11300 6750 50  0001 C CNN
+F 1 "+5V" H 11315 7073 50  0000 C CNN
+F 2 "" H 11300 6900 50  0001 C CNN
+F 3 "" H 11300 6900 50  0001 C CNN
+	1    11300 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0142
+U 1 1 5EDF8E46
+P 11300 5800
+F 0 "#PWR0142" H 11300 5650 50  0001 C CNN
+F 1 "+5V" H 11315 5973 50  0000 C CNN
+F 2 "" H 11300 5800 50  0001 C CNN
+F 3 "" H 11300 5800 50  0001 C CNN
+	1    11300 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0143
+U 1 1 5EDFE8D0
+P 12500 5300
+F 0 "#PWR0143" H 12500 5150 50  0001 C CNN
+F 1 "+5V" H 12515 5473 50  0000 C CNN
+F 2 "" H 12500 5300 50  0001 C CNN
+F 3 "" H 12500 5300 50  0001 C CNN
+	1    12500 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0144
+U 1 1 5EE043D3
+P 12500 4200
+F 0 "#PWR0144" H 12500 4050 50  0001 C CNN
+F 1 "+5V" H 12515 4373 50  0000 C CNN
+F 2 "" H 12500 4200 50  0001 C CNN
+F 3 "" H 12500 4200 50  0001 C CNN
+	1    12500 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0145
+U 1 1 5EE09F70
+P 11300 4700
+F 0 "#PWR0145" H 11300 4550 50  0001 C CNN
+F 1 "+5V" H 11315 4873 50  0000 C CNN
+F 2 "" H 11300 4700 50  0001 C CNN
+F 3 "" H 11300 4700 50  0001 C CNN
+	1    11300 4700
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
