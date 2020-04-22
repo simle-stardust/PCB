@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 0.3)
+    (last_trace_width 0.25)
     (user_trace_width 0.3)
     (trace_clearance 0.2)
     (zone_clearance 0.508)
@@ -470,7 +470,7 @@
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (dimension 63.5 (width 0.12) (layer B.SilkS)
-    (gr_text "63,500 mm" (at 248.92 82.55 90) (layer B.SilkS) (tstamp 5EA0F5AF)
+    (gr_text "63,500 mm" (at 248.92 82.55 90) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (feature1 (pts (xy 228.6 50.8) (xy 248.236421 50.8)))
@@ -506,7 +506,7 @@
     (arrow2b (pts (xy 177.8 125.73) (xy 178.926504 125.143579)))
   )
   (dimension 76.2 (width 0.12) (layer B.SilkS)
-    (gr_text "76,200 mm" (at 241.935 82.55 90) (layer B.SilkS) (tstamp 5EA0F5A5)
+    (gr_text "76,200 mm" (at 241.935 82.55 90) (layer B.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (feature1 (pts (xy 228.6 44.45) (xy 241.251421 44.45)))

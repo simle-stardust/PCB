@@ -18,10 +18,10 @@ Text GLabel 3900 3200 2    50   Input ~ 0
 Text GLabel 3900 3600 2    50   Input ~ 0
 DHT22
 $Comp
-L Connector:DB9_Female_MountingHoles DSUB1
+L Connector:DB9_Female_MountingHoles DSUB2
 U 1 1 5F245498
 P 3600 3400
-F 0 "DSUB1" H 3780 3309 50  0000 L CNN
+F 0 "DSUB2" H 3780 3309 50  0000 L CNN
 F 1 "DB9_Female" H 3780 3400 50  0000 L CNN
 F 2 "Connector_Dsub:DSUB-9_Female_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 3600 3400 50  0001 C CNN
 F 3 " ~" H 3600 3400 50  0001 C CNN
@@ -202,21 +202,6 @@ F 3 "" H 7100 4500 50  0001 C CNN
 	1    7100 4500
 	1    0    0    -1  
 $EndComp
-Text GLabel 7500 4100 2    50   Input ~ 0
-SPI-SDA
-Wire Wire Line
-	8050 3900 8050 4000
-$Comp
-L power:GND #PWR0154
-U 1 1 5EEF4069
-P 8050 4000
-F 0 "#PWR0154" H 8050 3750 50  0001 C CNN
-F 1 "GND" H 8055 3827 50  0000 C CNN
-F 2 "" H 8050 4000 50  0001 C CNN
-F 3 "" H 8050 4000 50  0001 C CNN
-	1    8050 4000
-	1    0    0    -1  
-$EndComp
 Text GLabel 7500 4300 2    50   Input ~ 0
 SPI-SS-Pressure
 $Comp
@@ -230,10 +215,8 @@ F 3 "" H 8000 8400 50  0001 C CNN
 	1    8000 8400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7500 3900 8050 3900
 Text GLabel 3900 3400 2    50   Input ~ 0
-SPI-SDO
+SPI-MISO
 Text GLabel 3900 3500 2    50   Input ~ 0
 SPI-SS-Pressure
 $Comp
@@ -247,12 +230,12 @@ F 3 "" H 7100 3700 50  0001 C CNN
 	1    7100 3700
 	-1   0    0    -1  
 $EndComp
-Text GLabel 3900 3700 2    50   Input ~ 0
-SPI-SDA
 Text GLabel 3900 3300 2    50   Input ~ 0
 SPI-CLK
 Text GLabel 7500 4000 2    50   Input ~ 0
-SPI-CLK
+SPI-MISO
 Text GLabel 7500 4200 2    50   Input ~ 0
-SPI-SDO
+SPI-CLK
+Text GLabel 3900 3700 2    50   Input ~ 0
+SPI-MOSI
 $EndSCHEMATC
