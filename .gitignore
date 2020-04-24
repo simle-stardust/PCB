@@ -29,3 +29,4 @@ fp-info-cache
 # Plot Files
 *.gbr
 *.drl
+*.step
