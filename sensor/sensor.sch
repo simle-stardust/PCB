@@ -181,28 +181,17 @@ Text GLabel 2800 6050 0    50   Input ~ 0
 Text GLabel 4700 7450 0    50   Input ~ 0
 DHT22
 $Comp
-L Sensor_Pressure:MS5607-02BA U9
-U 1 1 5EA6EE10
-P 3100 7500
-F 0 "U9" H 3430 7546 50  0000 L CNN
-F 1 "SSCDRNN015PASA5" H 3430 7455 50  0000 L CNN
-F 2 "Package_DIP:DIP-8_W8.89mm_SMDSocket_LongPads" H 3100 7500 50  0001 C CNN
-F 3 "https://sensing.honeywell.com/index.php?ci_id=151134" H 3100 7500 50  0001 C CNN
-	1    3100 7500
-	-1   0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0122
 U 1 1 5EA710CD
-P 3100 7900
-F 0 "#PWR0122" H 3100 7650 50  0001 C CNN
-F 1 "GND" H 3105 7727 50  0000 C CNN
-F 2 "" H 3100 7900 50  0001 C CNN
-F 3 "" H 3100 7900 50  0001 C CNN
-	1    3100 7900
+P 3100 7800
+F 0 "#PWR0122" H 3100 7550 50  0001 C CNN
+F 1 "GND" H 3105 7627 50  0000 C CNN
+F 2 "" H 3100 7800 50  0001 C CNN
+F 3 "" H 3100 7800 50  0001 C CNN
+	1    3100 7800
 	1    0    0    -1  
 $EndComp
-Text GLabel 3500 7700 2    50   Input ~ 0
+Text GLabel 3500 7350 2    50   Input ~ 0
 SPI-SS-Pressure
 $Comp
 L power:GND #PWR0103
@@ -222,20 +211,31 @@ SPI-SS-Pressure
 $Comp
 L power:+5V #PWR0108
 U 1 1 5EAA384C
-P 3100 7100
-F 0 "#PWR0108" H 3100 6950 50  0001 C CNN
-F 1 "+5V" H 3115 7273 50  0000 C CNN
-F 2 "" H 3100 7100 50  0001 C CNN
-F 3 "" H 3100 7100 50  0001 C CNN
-	1    3100 7100
+P 3100 7050
+F 0 "#PWR0108" H 3100 6900 50  0001 C CNN
+F 1 "+5V" H 3115 7223 50  0000 C CNN
+F 2 "" H 3100 7050 50  0001 C CNN
+F 3 "" H 3100 7050 50  0001 C CNN
+	1    3100 7050
 	-1   0    0    -1  
 $EndComp
 Text GLabel 4100 3350 2    50   Input ~ 0
 SPI-CLK
-Text GLabel 3500 7400 2    50   Input ~ 0
+Text GLabel 3500 7550 2    50   Input ~ 0
 SPI-MISO
-Text GLabel 3500 7600 2    50   Input ~ 0
+Text GLabel 3500 7450 2    50   Input ~ 0
 SPI-CLK
 Text GLabel 4100 3750 2    50   Input ~ 0
 SPI-MOSI
+$Comp
+L sscdrnn015pasa5:SSCDRNN015PASA5 U?
+U 1 1 5EA36ED1
+P 3100 8000
+F 0 "U?" H 2771 8621 50  0000 R CNN
+F 1 "SSCDRNN015PASA5" H 2771 8530 50  0000 R CNN
+F 2 "Package_DIP:DIP-8_W8.89mm_SMDSocket_LongPads" H 3100 8000 50  0001 C CNN
+F 3 "https://sensing.honeywell.com/index.php?ci_id=151134" H 3100 8000 50  0001 C CNN
+	1    3100 8000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name sscdrnn015pasa5)(type Legacy)(uri ${KIPRJMOD}/sscdrnn015pasa5.lib)(options "")(descr ""))
+)
