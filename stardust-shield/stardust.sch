@@ -207,17 +207,15 @@ Text GLabel 8650 3450 0    50   Input ~ 0
 I2C-SDA
 Text GLabel 8650 3250 0    50   Input ~ 0
 I2C-SCL
-Wire Wire Line
-	8950 4150 8950 3950
 $Comp
 L power:GND #PWR0104
 U 1 1 5EB55ABA
-P 8950 4150
-F 0 "#PWR0104" H 8950 3900 50  0001 C CNN
-F 1 "GND" H 8955 3977 50  0000 C CNN
-F 2 "" H 8950 4150 50  0001 C CNN
-F 3 "" H 8950 4150 50  0001 C CNN
-	1    8950 4150
+P 8950 3950
+F 0 "#PWR0104" H 8950 3700 50  0001 C CNN
+F 1 "GND" H 8955 3777 50  0000 C CNN
+F 2 "" H 8950 3950 50  0001 C CNN
+F 3 "" H 8950 3950 50  0001 C CNN
+	1    8950 3950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -240,17 +238,6 @@ $EndComp
 Wire Wire Line
 	8650 3750 8450 3750
 $Comp
-L Connector:DB9_Male_MountingHoles DSUB-1
-U 1 1 5EBA0FF7
-P 8950 3350
-F 0 "DSUB-1" H 9130 3352 50  0000 L CNN
-F 1 "DB9_Male_MountingHoles" H 9130 3261 50  0000 L CNN
-F 2 "Connector_Dsub:DSUB-9_Male_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 8950 3350 50  0001 C CNN
-F 3 " ~" H 8950 3350 50  0001 C CNN
-	1    8950 3350
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:DB9_Male_MountingHoles DSUB-2
 U 1 1 5EBC672B
 P 8950 5700
@@ -265,11 +252,9 @@ Text GLabel 6700 9200 0    50   Input ~ 0
 I2C-SDA
 Text GLabel 6700 9300 0    50   Input ~ 0
 I2C-SCL
-Text GLabel 9300 10300 2    50   Input ~ 0
-DHT22-1
-Text GLabel 9300 11300 2    50   Input ~ 0
-DHT22-2
 Text GLabel 9300 10100 2    50   Input ~ 0
+DHT22-1
+Text GLabel 9300 9900 2    50   Input ~ 0
 SPI-SS-Pressure-2
 Text GLabel 9300 10700 2    50   Input ~ 0
 DHT22-3
@@ -281,8 +266,6 @@ Text GLabel 9300 12400 2    50   Input ~ 0
 SPI-MISO
 Text GLabel 9300 12500 2    50   Input ~ 0
 SPI-MOSI
-Text GLabel 9300 9700 2    50   Input ~ 0
-Pump-GPIO
 $Comp
 L power:+5V #PWR0134
 U 1 1 5ED92911
@@ -500,7 +483,7 @@ F 3 "" H 6250 12450 50  0001 C CNN
 	1    6250 12450
 	1    0    0    -1  
 $EndComp
-Text GLabel 9300 11500 2    50   Input ~ 0
+Text GLabel 9300 11300 2    50   Input ~ 0
 SPI-SS-Pressure-1
 Text GLabel 9300 11100 2    50   Input ~ 0
 1Wire-2
@@ -571,13 +554,11 @@ Wire Wire Line
 	8050 3650 8650 3650
 Wire Wire Line
 	8250 3050 8250 2750
-Wire Wire Line
-	8250 3050 8650 3050
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0105
 U 1 1 5EA555FA
 P 8450 2750
-F 0 "#PWR?" H 8450 2600 50  0001 C CNN
+F 0 "#PWR0105" H 8450 2600 50  0001 C CNN
 F 1 "+5V" H 8465 2923 50  0000 C CNN
 F 2 "" H 8450 2750 50  0001 C CNN
 F 3 "" H 8450 2750 50  0001 C CNN
@@ -585,10 +566,10 @@ F 3 "" H 8450 2750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR?
+L power:+12V #PWR0108
 U 1 1 5EA5592B
 P 8250 2750
-F 0 "#PWR?" H 8250 2600 50  0001 C CNN
+F 0 "#PWR0108" H 8250 2600 50  0001 C CNN
 F 1 "+12V" H 8265 2923 50  0000 C CNN
 F 2 "" H 8250 2750 50  0001 C CNN
 F 3 "" H 8250 2750 50  0001 C CNN
@@ -596,16 +577,64 @@ F 3 "" H 8250 2750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR?
+L power:+12V #PWR0109
 U 1 1 5EA55CD7
 P 8050 2750
-F 0 "#PWR?" H 8050 2600 50  0001 C CNN
+F 0 "#PWR0109" H 8050 2600 50  0001 C CNN
 F 1 "+12V" H 8065 2923 50  0000 C CNN
 F 2 "" H 8050 2750 50  0001 C CNN
 F 3 "" H 8050 2750 50  0001 C CNN
 	1    8050 2750
 	1    0    0    -1  
 $EndComp
-Text GLabel 8650 3350 0    50   Input ~ 0
+Text GLabel 7750 3350 0    50   Input ~ 0
 Pump-GPIO
+Text GLabel 9300 10300 2    50   Input ~ 0
+Pump-GPIO
+Wire Wire Line
+	7900 3950 7900 3800
+$Comp
+L power:GND #PWR0110
+U 1 1 5EA88781
+P 7900 3950
+F 0 "#PWR0110" H 7900 3700 50  0001 C CNN
+F 1 "GND" H 7905 3777 50  0000 C CNN
+F 2 "" H 7900 3950 50  0001 C CNN
+F 3 "" H 7900 3950 50  0001 C CNN
+	1    7900 3950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 3050 8650 3050
+$Comp
+L Connector:DB9_Male_MountingHoles DSUB-1
+U 1 1 5EBA0FF7
+P 8950 3350
+F 0 "DSUB-1" H 9130 3352 50  0000 L CNN
+F 1 "DB9_Male_MountingHoles" H 9130 3261 50  0000 L CNN
+F 2 "Connector_Dsub:DSUB-9_Male_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 8950 3350 50  0001 C CNN
+F 3 " ~" H 8950 3350 50  0001 C CNN
+	1    8950 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5EA96850
+P 7900 3650
+F 0 "R1" H 7650 3700 50  0000 L CNN
+F 1 "10k" H 7650 3600 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7830 3650 50  0001 C CNN
+F 3 "~" H 7900 3650 50  0001 C CNN
+	1    7900 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 3350 7900 3350
+Wire Wire Line
+	7900 3500 7900 3350
+Connection ~ 7900 3350
+Wire Wire Line
+	7900 3350 8650 3350
+Text GLabel 9300 11500 2    50   Input ~ 0
+DHT22-2
 $EndSCHEMATC
