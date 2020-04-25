@@ -220,19 +220,6 @@ F 3 "" H 8950 4150 50  0001 C CNN
 	1    8950 4150
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+5V #PWR0105
-U 1 1 5EB55AC0
-P 8450 2750
-F 0 "#PWR0105" H 8450 2600 50  0001 C CNN
-F 1 "+5V" H 8465 2923 50  0000 C CNN
-F 2 "" H 8450 2750 50  0001 C CNN
-F 3 "" H 8450 2750 50  0001 C CNN
-	1    8450 2750
-	-1   0    0    -1  
-$EndComp
-Text GLabel 8650 3050 0    50   Input ~ 0
-Pump-1
 Wire Wire Line
 	8450 2950 8450 2750
 Wire Wire Line
@@ -252,8 +239,6 @@ F 3 "" H 8450 3950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8650 3750 8450 3750
-Text GLabel 8650 3650 0    50   Input ~ 0
-Pump-2
 $Comp
 L Connector:DB9_Male_MountingHoles DSUB-1
 U 1 1 5EBA0FF7
@@ -296,12 +281,8 @@ Text GLabel 9300 12400 2    50   Input ~ 0
 SPI-MISO
 Text GLabel 9300 12500 2    50   Input ~ 0
 SPI-MOSI
-Text GLabel 9300 9900 2    50   Input ~ 0
-Pump-GPIO-1
 Text GLabel 9300 9700 2    50   Input ~ 0
-Pump-GPIO-2
-Text GLabel 4800 12750 2    50   Input ~ 0
-Pump-2
+Pump-GPIO
 $Comp
 L power:+5V #PWR0134
 U 1 1 5ED92911
@@ -519,8 +500,6 @@ F 3 "" H 6250 12450 50  0001 C CNN
 	1    6250 12450
 	1    0    0    -1  
 $EndComp
-Text GLabel 2850 12750 2    50   Input ~ 0
-Pump-1
 Text GLabel 9300 11500 2    50   Input ~ 0
 SPI-SS-Pressure-1
 Text GLabel 9300 11100 2    50   Input ~ 0
@@ -559,58 +538,6 @@ Wire Wire Line
 	6500 11900 6500 11800
 Connection ~ 6500 11900
 $Comp
-L irfl210:IRFL210 U2
-U 1 1 5EA5E9FB
-P 4500 13050
-F 0 "U2" H 4500 13227 50  0000 C CNN
-F 1 "IRFL210" H 4500 13136 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-223" H 4500 13200 50  0001 C CNN
-F 3 "https://sensing.honeywell.com/index.php?ci_id=151134" H 4500 13000 50  0001 C CNN
-	1    4500 13050
-	1    0    0    -1  
-$EndComp
-$Comp
-L irfl210:IRFL210 U1
-U 1 1 5EA60E65
-P 2550 13050
-F 0 "U1" H 2550 13227 50  0000 C CNN
-F 1 "IRFL210" H 2550 13136 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-223" H 2550 13200 50  0001 C CNN
-F 3 "https://sensing.honeywell.com/index.php?ci_id=151134" H 2550 13000 50  0001 C CNN
-	1    2550 13050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+12V #PWR0108
-U 1 1 5EC6A2FB
-P 2150 12650
-F 0 "#PWR0108" H 2150 12500 50  0001 C CNN
-F 1 "+12V" H 2165 12823 50  0000 C CNN
-F 2 "" H 2150 12650 50  0001 C CNN
-F 3 "" H 2150 12650 50  0001 C CNN
-	1    2150 12650
-	1    0    0    -1  
-$EndComp
-Text GLabel 2550 12450 1    50   Input ~ 0
-Pump-GPIO-1
-Text GLabel 4500 12450 1    50   Input ~ 0
-Pump-GPIO-2
-$Comp
-L power:+12V #PWR0110
-U 1 1 5EC7A67C
-P 4100 12650
-F 0 "#PWR0110" H 4100 12500 50  0001 C CNN
-F 1 "+12V" H 4115 12823 50  0000 C CNN
-F 2 "" H 4100 12650 50  0001 C CNN
-F 3 "" H 4100 12650 50  0001 C CNN
-	1    4100 12650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4100 12650 4100 12750
-Wire Wire Line
-	4100 12750 4200 12750
-$Comp
 L sscdrnn015pasa5:SSCDRNN015PASA5 U9
 U 1 1 5EA83F3B
 P 4500 11500
@@ -639,7 +566,46 @@ F 3 "" H 4500 11300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2250 12750 2150 12750
+	8050 3650 8050 2750
 Wire Wire Line
-	2150 12750 2150 12650
+	8050 3650 8650 3650
+Wire Wire Line
+	8250 3050 8250 2750
+Wire Wire Line
+	8250 3050 8650 3050
+$Comp
+L power:+5V #PWR?
+U 1 1 5EA555FA
+P 8450 2750
+F 0 "#PWR?" H 8450 2600 50  0001 C CNN
+F 1 "+5V" H 8465 2923 50  0000 C CNN
+F 2 "" H 8450 2750 50  0001 C CNN
+F 3 "" H 8450 2750 50  0001 C CNN
+	1    8450 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5EA5592B
+P 8250 2750
+F 0 "#PWR?" H 8250 2600 50  0001 C CNN
+F 1 "+12V" H 8265 2923 50  0000 C CNN
+F 2 "" H 8250 2750 50  0001 C CNN
+F 3 "" H 8250 2750 50  0001 C CNN
+	1    8250 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5EA55CD7
+P 8050 2750
+F 0 "#PWR?" H 8050 2600 50  0001 C CNN
+F 1 "+12V" H 8065 2923 50  0000 C CNN
+F 2 "" H 8050 2750 50  0001 C CNN
+F 3 "" H 8050 2750 50  0001 C CNN
+	1    8050 2750
+	1    0    0    -1  
+$EndComp
+Text GLabel 8650 3350 0    50   Input ~ 0
+Pump-GPIO
 $EndSCHEMATC
