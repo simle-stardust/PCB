@@ -18,12 +18,12 @@ Text GLabel 4100 3250 2    50   Input ~ 0
 Text GLabel 4100 3650 2    50   Input ~ 0
 DHT22
 $Comp
-L Connector:DB9_Female_MountingHoles DSUB2
+L Connector:DB9_Male_MountingHoles DSUB2
 U 1 1 5F245498
 P 3800 3450
 F 0 "DSUB2" H 3980 3359 50  0000 L CNN
-F 1 "DB9_Female" H 3980 3450 50  0000 L CNN
-F 2 "Connector_Dsub:DSUB-9_Female_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 3800 3450 50  0001 C CNN
+F 1 "DB9_Male" H 3980 3450 50  0000 L CNN
+F 2 "Connector_Dsub:DSUB-9_Male_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm" H 3800 3450 50  0001 C CNN
 F 3 " ~" H 3800 3450 50  0001 C CNN
 	1    3800 3450
 	-1   0    0    1   
@@ -228,10 +228,10 @@ SPI-CLK
 Text GLabel 4100 3750 2    50   Input ~ 0
 SPI-MOSI
 $Comp
-L sscdrnn015pasa5:SSCDRNN015PASA5 U?
+L sscdrnn015pasa5:SSCDRNN015PASA5 U2
 U 1 1 5EA36ED1
 P 3100 8000
-F 0 "U?" H 2771 8621 50  0000 R CNN
+F 0 "U2" H 2771 8621 50  0000 R CNN
 F 1 "SSCDRNN015PASA5" H 2771 8530 50  0000 R CNN
 F 2 "Package_DIP:DIP-8_W8.89mm_SMDSocket_LongPads" H 3100 8000 50  0001 C CNN
 F 3 "https://sensing.honeywell.com/index.php?ci_id=151134" H 3100 8000 50  0001 C CNN

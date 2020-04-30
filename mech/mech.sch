@@ -4,10 +4,10 @@ EELAYER END
 $Descr A3 11693 16535 portrait
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "Stardust Mech PCB"
+Date "27 April 2020"
+Rev "1.0"
+Comp "Stardust"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -780,12 +780,12 @@ Wire Wire Line
 Wire Wire Line
 	7850 9750 6750 9750
 $Comp
-L Connector:DB9_Female_MountingHoles DSUB1
+L Connector:DB9_Male_MountingHoles DSUB1
 U 1 1 5F245498
 P 2850 2550
 F 0 "DSUB1" H 3030 2459 50  0000 L CNN
-F 1 "DB9_Female" H 3030 2550 50  0000 L CNN
-F 2 "Connector_Dsub:DSUB-9_Female_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 2850 2550 50  0001 C CNN
+F 1 "DB9_Male" H 3030 2550 50  0000 L CNN
+F 2 "Connector_Dsub:DSUB-9_Male_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm" H 2850 2550 50  0001 C CNN
 F 3 " ~" H 2850 2550 50  0001 C CNN
 	1    2850 2550
 	-1   0    0    1   

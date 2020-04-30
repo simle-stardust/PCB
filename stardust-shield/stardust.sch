@@ -4,7 +4,7 @@ EELAYER END
 $Descr A3 11693 16535 portrait
 encoding utf-8
 Sheet 1 1
-Title "Stardust Overview"
+Title "Stardust Main PCB"
 Date "17 March 2020"
 Rev "2020/3/14"
 Comp "Stardust"
@@ -243,7 +243,7 @@ U 1 1 5EBC672B
 P 8950 5700
 F 0 "DSUB-2" H 9130 5702 50  0000 L CNN
 F 1 "DB9_Male_MountingHoles" H 9130 5611 50  0000 L CNN
-F 2 "Connector_Dsub:DSUB-9_Male_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 8950 5700 50  0001 C CNN
+F 2 "Connector_Dsub:DSUB-9_Male_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm" H 8950 5700 50  0001 C CNN
 F 3 " ~" H 8950 5700 50  0001 C CNN
 	1    8950 5700
 	1    0    0    -1  
@@ -612,7 +612,7 @@ U 1 1 5EBA0FF7
 P 8950 3350
 F 0 "DSUB-1" H 9130 3352 50  0000 L CNN
 F 1 "DB9_Male_MountingHoles" H 9130 3261 50  0000 L CNN
-F 2 "Connector_Dsub:DSUB-9_Male_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 8950 3350 50  0001 C CNN
+F 2 "Connector_Dsub:DSUB-9_Male_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm" H 8950 3350 50  0001 C CNN
 F 3 " ~" H 8950 3350 50  0001 C CNN
 	1    8950 3350
 	1    0    0    -1  
