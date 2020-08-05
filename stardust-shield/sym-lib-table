@@ -2,4 +2,5 @@
   (lib (name Arduino)(type Legacy)(uri /home/yasiu/Projects/Elektronika/Stardust/stardust/arduino.lib)(options "")(descr ""))
   (lib (name irfl210)(type Legacy)(uri ${KIPRJMOD}/irfl210.lib)(options "")(descr ""))
   (lib (name sscdrnn015pasa5)(type Legacy)(uri ${KIPRJMOD}/sscdrnn015pasa5.lib)(options "")(descr ""))
+  (lib (name stardust-rescue)(type Legacy)(uri ${KIPRJMOD}/stardust-rescue.lib)(options "")(descr ""))
 )
