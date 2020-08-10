@@ -304,12 +304,12 @@ $EndComp
 $Comp
 L stardust-rescue:GND-power #PWR0118
 U 1 1 5ED14938
-P 3950 1800
-F 0 "#PWR0118" H 3950 1550 50  0001 C CNN
-F 1 "GND" H 3955 1627 50  0000 C CNN
-F 2 "" H 3950 1800 50  0001 C CNN
-F 3 "" H 3950 1800 50  0001 C CNN
-	1    3950 1800
+P 3950 1900
+F 0 "#PWR0118" H 3950 1650 50  0001 C CNN
+F 1 "GND" H 3955 1727 50  0000 C CNN
+F 2 "" H 3950 1900 50  0001 C CNN
+F 3 "" H 3950 1900 50  0001 C CNN
+	1    3950 1900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -324,9 +324,7 @@ F 3 "" H 4200 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3950 1650 3950 1800
-Wire Wire Line
-	3950 1550 3950 1300
+	3950 1550 3950 1400
 $Comp
 L stardust-rescue:GND-power #PWR0123
 U 1 1 5EDCB60C
@@ -1740,4 +1738,31 @@ Text GLabel 9300 8800 2    50   Input ~ 0
 LED-5
 Text GLabel 9300 8900 2    50   Input ~ 0
 LED-6
+$Comp
+L Device:D_TVS D7
+U 1 1 5F3321A1
+P 4150 1600
+F 0 "D7" V 4104 1680 50  0000 L CNN
+F 1 "D_TVS" V 4195 1680 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 4150 1600 50  0001 C CNN
+F 3 "~" H 4150 1600 50  0001 C CNN
+	1    4150 1600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3950 1400 4150 1400
+Wire Wire Line
+	4150 1400 4150 1450
+Connection ~ 3950 1400
+Wire Wire Line
+	3950 1400 3950 1300
+Wire Wire Line
+	3950 1650 3950 1800
+Wire Wire Line
+	4150 1750 4150 1800
+Wire Wire Line
+	4150 1800 3950 1800
+Connection ~ 3950 1800
+Wire Wire Line
+	3950 1800 3950 1900
 $EndSCHEMATC
