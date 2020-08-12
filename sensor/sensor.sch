@@ -5,8 +5,8 @@ $Descr A4 8268 11693 portrait
 encoding utf-8
 Sheet 1 1
 Title "Sensor board - Outside"
-Date ""
-Rev "27 April 2020"
+Date "31 July 2020"
+Rev "2.0"
 Comp "Stardust BEXUS"
 Comment1 ""
 Comment2 ""
