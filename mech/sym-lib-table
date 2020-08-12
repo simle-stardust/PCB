@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name Arduino)(type Legacy)(uri /home/yasiu/Projects/Elektronika/Stardust/stardust/arduino.lib)(options "")(descr ""))
   (lib (name irfl210)(type Legacy)(uri /home/yasiu/Projects/Elektronika/Stardust/stardust-shield/irfl210.lib)(options "")(descr ""))
+  (lib (name mech-rescue)(type Legacy)(uri ${KIPRJMOD}/mech-rescue.lib)(options "")(descr ""))
 )
