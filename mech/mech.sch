@@ -5,8 +5,8 @@ $Descr A3 11693 16535 portrait
 encoding utf-8
 Sheet 1 1
 Title "Stardust Mech PCB"
-Date "27 April 2020"
-Rev "1.0"
+Date "31 July 2020"
+Rev "2.0"
 Comp "Stardust"
 Comment1 ""
 Comment2 ""
