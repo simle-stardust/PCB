@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name sscdrnn015pasa5)(type Legacy)(uri ${KIPRJMOD}/sscdrnn015pasa5.lib)(options "")(descr ""))
+  (lib (name sensor-rescue)(type Legacy)(uri ${KIPRJMOD}/sensor-rescue.lib)(options "")(descr ""))
 )
