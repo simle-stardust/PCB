@@ -655,8 +655,6 @@ F 3 "" H 6450 10950 50  0001 C CNN
 	1    6450 10950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6450 10900 6600 10900
 Text GLabel 6600 10500 0    50   Input ~ 0
 SW-11
 Text GLabel 6600 10700 0    50   Input ~ 0
@@ -669,8 +667,6 @@ Wire Wire Line
 	6250 10500 6250 10600
 Wire Wire Line
 	6050 10500 6050 10800
-Wire Wire Line
-	6450 10950 6450 10900
 $Comp
 L power:+5P #PWR035
 U 1 1 6157CDD6
@@ -1145,17 +1141,15 @@ F 3 "" H 5250 4350 50  0001 C CNN
 	1    5250 4350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6600 4000 6600 4150
 $Comp
 L power:+5V #PWR09
 U 1 1 60BC9E7D
-P 6600 4000
-F 0 "#PWR09" H 6600 3850 50  0001 C CNN
-F 1 "+5V" H 6615 4173 50  0000 C CNN
-F 2 "" H 6600 4000 50  0001 C CNN
-F 3 "" H 6600 4000 50  0001 C CNN
-	1    6600 4000
+P 6600 3450
+F 0 "#PWR09" H 6600 3300 50  0001 C CNN
+F 1 "+5V" H 6615 3623 50  0000 C CNN
+F 2 "" H 6600 3450 50  0001 C CNN
+F 3 "" H 6600 3450 50  0001 C CNN
+	1    6600 3450
 	1    0    0    -1  
 $EndComp
 Text GLabel 7950 6150 3    50   Input ~ 0
@@ -1758,633 +1752,40 @@ Wire Wire Line
 Wire Wire Line
 	6500 1950 6500 2100
 $Comp
-L Connector:Conn_01x05_Male Jm?
-U 1 1 60A841D7
-P 3800 13400
-F 0 "Jm?" H 3900 13750 50  0000 C CNN
-F 1 "Conn_01x05_Male" H 3908 13690 50  0001 C CNN
-F 2 "" H 3800 13400 50  0001 C CNN
-F 3 "~" H 3800 13400 50  0001 C CNN
-	1    3800 13400
+L Device:C C2
+U 1 1 60CDD839
+P 6800 3750
+F 0 "C2" H 6915 3796 50  0000 L CNN
+F 1 "C100nF" H 6915 3705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 6838 3600 50  0001 C CNN
+F 3 "~" H 6800 3750 50  0001 C CNN
+	1    6800 3750
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x05_Male Jm?
-U 1 1 60A841DD
-P 6950 8000
-F 0 "Jm?" H 7050 8350 50  0000 C CNN
-F 1 "Conn_01x05_Male" H 7058 8290 50  0001 C CNN
-F 2 "" H 6950 8000 50  0001 C CNN
-F 3 "~" H 6950 8000 50  0001 C CNN
-	1    6950 8000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x05_Male Jm?
-U 1 1 60A841E3
-P 6950 8900
-F 0 "Jm?" H 7050 9250 50  0000 C CNN
-F 1 "Conn_01x05_Male" H 7058 9190 50  0001 C CNN
-F 2 "" H 6950 8900 50  0001 C CNN
-F 3 "~" H 6950 8900 50  0001 C CNN
-	1    6950 8900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x05_Male Jm?
-U 1 1 60A841E9
-P 6950 9800
-F 0 "Jm?" H 7050 10150 50  0000 C CNN
-F 1 "Conn_01x05_Male" H 7058 10090 50  0001 C CNN
-F 2 "" H 6950 9800 50  0001 C CNN
-F 3 "~" H 6950 9800 50  0001 C CNN
-	1    6950 9800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x05_Male J1m?
-U 1 1 60A841EF
-P 6950 11600
-F 0 "J1m?" H 7050 11950 50  0000 C CNN
-F 1 "Conn_01x05_Male" H 7058 11890 50  0001 C CNN
-F 2 "" H 6950 11600 50  0001 C CNN
-F 3 "~" H 6950 11600 50  0001 C CNN
-	1    6950 11600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x05_Male J1m?
-U 1 1 60A841F5
-P 6950 12500
-F 0 "J1m?" H 7050 12850 50  0000 C CNN
-F 1 "Conn_01x05_Male" H 7058 12790 50  0001 C CNN
-F 2 "" H 6950 12500 50  0001 C CNN
-F 3 "~" H 6950 12500 50  0001 C CNN
-	1    6950 12500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x05_Male J1m?
-U 1 1 60A841FB
-P 6950 13400
-F 0 "J1m?" H 7050 13750 50  0000 C CNN
-F 1 "Conn_01x05_Male" H 7058 13690 50  0001 C CNN
-F 2 "" H 6950 13400 50  0001 C CNN
-F 3 "~" H 6950 13400 50  0001 C CNN
-	1    6950 13400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x05_Male Jm?
-U 1 1 60A84201
-P 3800 8000
-F 0 "Jm?" H 3900 8350 50  0000 C CNN
-F 1 "Conn_01x05_Male" H 3908 8290 50  0001 C CNN
-F 2 "" H 3800 8000 50  0001 C CNN
-F 3 "~" H 3800 8000 50  0001 C CNN
-	1    3800 8000
+L power:GND #PWR0107
+U 1 1 60CDD83F
+P 6800 3900
+F 0 "#PWR0107" H 6800 3650 50  0001 C CNN
+F 1 "GND" H 6805 3727 50  0000 C CNN
+F 2 "" H 6800 3900 50  0001 C CNN
+F 3 "" H 6800 3900 50  0001 C CNN
+	1    6800 3900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7150 13200 7800 13200
+	6600 3600 6800 3600
 Wire Wire Line
-	7150 13300 8200 13300
+	6600 3600 6600 3450
+Connection ~ 6600 3600
 Wire Wire Line
-	8200 13200 8200 13300
-$Comp
-L Switch:SW_Push SW?
-U 1 1 60A8420A
-P 8000 13200
-F 0 "SW?" H 8000 13400 50  0000 C CNN
-F 1 "SW_Push" H 8000 13394 50  0001 C CNN
-F 2 "" H 8000 13400 50  0001 C CNN
-F 3 "~" H 8000 13400 50  0001 C CNN
-	1    8000 13200
-	1    0    0    -1  
-$EndComp
+	6600 3600 6600 4150
+NoConn ~ 3400 6050
+NoConn ~ 3400 5250
+NoConn ~ 7300 6050
+NoConn ~ 7300 5150
 Wire Wire Line
-	7700 13400 7150 13400
+	6450 10950 6450 10900
 Wire Wire Line
-	7150 13500 7700 13500
-Wire Wire Line
-	7700 13600 7150 13600
-$Comp
-L Motor:Motor_Servo_Hitec M-?
-U 1 1 60A84213
-P 8000 13500
-F 0 "M-?" H 8350 13550 50  0000 L CNN
-F 1 "Motor_Servo_Hitec" H 8350 13450 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8000 13310 50  0001 C CNN
-F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 8000 13310 50  0001 C CNN
-	1    8000 13500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7150 12300 7800 12300
-Wire Wire Line
-	7150 12400 8200 12400
-Wire Wire Line
-	8200 12300 8200 12400
-$Comp
-L Switch:SW_Push SW?
-U 1 1 60A8421C
-P 8000 12300
-F 0 "SW?" H 8000 12500 50  0000 C CNN
-F 1 "SW_Push" H 8000 12494 50  0001 C CNN
-F 2 "" H 8000 12500 50  0001 C CNN
-F 3 "~" H 8000 12500 50  0001 C CNN
-	1    8000 12300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7700 12500 7150 12500
-Wire Wire Line
-	7150 12600 7700 12600
-Wire Wire Line
-	7700 12700 7150 12700
-$Comp
-L Motor:Motor_Servo_Hitec M-?
-U 1 1 60A84225
-P 8000 12600
-F 0 "M-?" H 8350 12650 50  0000 L CNN
-F 1 "Motor_Servo_Hitec" H 8350 12550 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8000 12410 50  0001 C CNN
-F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 8000 12410 50  0001 C CNN
-	1    8000 12600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7150 11400 7800 11400
-Wire Wire Line
-	7150 11500 8200 11500
-Wire Wire Line
-	8200 11400 8200 11500
-$Comp
-L Switch:SW_Push SW?
-U 1 1 60A8422E
-P 8000 11400
-F 0 "SW?" H 8000 11600 50  0000 C CNN
-F 1 "SW_Push" H 8000 11594 50  0001 C CNN
-F 2 "" H 8000 11600 50  0001 C CNN
-F 3 "~" H 8000 11600 50  0001 C CNN
-	1    8000 11400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7700 11600 7150 11600
-Wire Wire Line
-	7150 11700 7700 11700
-Wire Wire Line
-	7700 11800 7150 11800
-$Comp
-L Motor:Motor_Servo_Hitec M-?
-U 1 1 60A84237
-P 8000 11700
-F 0 "M-?" H 8350 11750 50  0000 L CNN
-F 1 "Motor_Servo_Hitec" H 8350 11650 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8000 11510 50  0001 C CNN
-F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 8000 11510 50  0001 C CNN
-	1    8000 11700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7150 10500 7800 10500
-Wire Wire Line
-	7150 10600 8200 10600
-Wire Wire Line
-	8200 10500 8200 10600
-$Comp
-L Switch:SW_Push SW?
-U 1 1 60A84240
-P 8000 10500
-F 0 "SW?" H 8000 10700 50  0000 C CNN
-F 1 "SW_Push" H 8000 10694 50  0001 C CNN
-F 2 "" H 8000 10700 50  0001 C CNN
-F 3 "~" H 8000 10700 50  0001 C CNN
-	1    8000 10500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7700 10700 7150 10700
-Wire Wire Line
-	7150 10800 7700 10800
-Wire Wire Line
-	7700 10900 7150 10900
-$Comp
-L Connector:Conn_01x05_Male J1m?
-U 1 1 60A84249
-P 6950 10700
-F 0 "J1m?" H 7050 11050 50  0000 C CNN
-F 1 "Conn_01x05_Male" H 7058 10990 50  0001 C CNN
-F 2 "" H 6950 10700 50  0001 C CNN
-F 3 "~" H 6950 10700 50  0001 C CNN
-	1    6950 10700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Motor:Motor_Servo_Hitec M-?
-U 1 1 60A8424F
-P 8000 10800
-F 0 "M-?" H 8350 10850 50  0000 L CNN
-F 1 "Motor_Servo_Hitec" H 8350 10750 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8000 10610 50  0001 C CNN
-F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 8000 10610 50  0001 C CNN
-	1    8000 10800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7150 9600 7800 9600
-Wire Wire Line
-	7150 9700 8200 9700
-Wire Wire Line
-	8200 9600 8200 9700
-$Comp
-L Switch:SW_Push SW?
-U 1 1 60A84258
-P 8000 9600
-F 0 "SW?" H 8000 9800 50  0000 C CNN
-F 1 "SW_Push" H 8000 9794 50  0001 C CNN
-F 2 "" H 8000 9800 50  0001 C CNN
-F 3 "~" H 8000 9800 50  0001 C CNN
-	1    8000 9600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7700 9800 7150 9800
-Wire Wire Line
-	7150 9900 7700 9900
-Wire Wire Line
-	7700 10000 7150 10000
-$Comp
-L Motor:Motor_Servo_Hitec M-?
-U 1 1 60A84261
-P 8000 9900
-F 0 "M-?" H 8350 9950 50  0000 L CNN
-F 1 "Motor_Servo_Hitec" H 8350 9850 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8000 9710 50  0001 C CNN
-F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 8000 9710 50  0001 C CNN
-	1    8000 9900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7150 8700 7800 8700
-Wire Wire Line
-	7150 8800 8200 8800
-Wire Wire Line
-	8200 8700 8200 8800
-$Comp
-L Switch:SW_Push SW?
-U 1 1 60A8426A
-P 8000 8700
-F 0 "SW?" H 8000 8900 50  0000 C CNN
-F 1 "SW_Push" H 8000 8894 50  0001 C CNN
-F 2 "" H 8000 8900 50  0001 C CNN
-F 3 "~" H 8000 8900 50  0001 C CNN
-	1    8000 8700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7700 8900 7150 8900
-Wire Wire Line
-	7150 9000 7700 9000
-Wire Wire Line
-	7700 9100 7150 9100
-$Comp
-L Motor:Motor_Servo_Hitec M-?
-U 1 1 60A84273
-P 8000 9000
-F 0 "M-?" H 8350 9050 50  0000 L CNN
-F 1 "Motor_Servo_Hitec" H 8350 8950 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8000 8810 50  0001 C CNN
-F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 8000 8810 50  0001 C CNN
-	1    8000 9000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7150 7800 7800 7800
-Wire Wire Line
-	7150 7900 8200 7900
-Wire Wire Line
-	8200 7800 8200 7900
-$Comp
-L Switch:SW_Push SW?
-U 1 1 60A8427C
-P 8000 7800
-F 0 "SW?" H 8000 8000 50  0000 C CNN
-F 1 "SW_Push" H 8000 7994 50  0001 C CNN
-F 2 "" H 8000 8000 50  0001 C CNN
-F 3 "~" H 8000 8000 50  0001 C CNN
-	1    8000 7800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7700 8000 7150 8000
-Wire Wire Line
-	7150 8100 7700 8100
-Wire Wire Line
-	7700 8200 7150 8200
-$Comp
-L Motor:Motor_Servo_Hitec M-?
-U 1 1 60A84285
-P 8000 8100
-F 0 "M-?" H 8350 8150 50  0000 L CNN
-F 1 "Motor_Servo_Hitec" H 8350 8050 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8000 7910 50  0001 C CNN
-F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 8000 7910 50  0001 C CNN
-	1    8000 8100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4000 13200 4650 13200
-Wire Wire Line
-	4000 13300 5050 13300
-Wire Wire Line
-	5050 13200 5050 13300
-$Comp
-L Switch:SW_Push SW?
-U 1 1 60A8428E
-P 4850 13200
-F 0 "SW?" H 4850 13400 50  0000 C CNN
-F 1 "SW_Push" H 4850 13394 50  0001 C CNN
-F 2 "" H 4850 13400 50  0001 C CNN
-F 3 "~" H 4850 13400 50  0001 C CNN
-	1    4850 13200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4550 13400 4000 13400
-Wire Wire Line
-	4000 13500 4550 13500
-Wire Wire Line
-	4550 13600 4000 13600
-$Comp
-L Motor:Motor_Servo_Hitec M-?
-U 1 1 60A84297
-P 4850 13500
-F 0 "M-?" H 5200 13550 50  0000 L CNN
-F 1 "Motor_Servo_Hitec" H 5200 13450 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4850 13310 50  0001 C CNN
-F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 4850 13310 50  0001 C CNN
-	1    4850 13500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4000 12300 4650 12300
-Wire Wire Line
-	4000 12400 5050 12400
-Wire Wire Line
-	5050 12300 5050 12400
-$Comp
-L Switch:SW_Push SW?
-U 1 1 60A842A0
-P 4850 12300
-F 0 "SW?" H 4850 12500 50  0000 C CNN
-F 1 "SW_Push" H 4850 12494 50  0001 C CNN
-F 2 "" H 4850 12500 50  0001 C CNN
-F 3 "~" H 4850 12500 50  0001 C CNN
-	1    4850 12300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4550 12500 4000 12500
-Wire Wire Line
-	4000 12600 4550 12600
-Wire Wire Line
-	4550 12700 4000 12700
-$Comp
-L Connector:Conn_01x05_Male Jm?
-U 1 1 60A842A9
-P 3800 12500
-F 0 "Jm?" H 3900 12850 50  0000 C CNN
-F 1 "Conn_01x05_Male" H 3908 12790 50  0001 C CNN
-F 2 "" H 3800 12500 50  0001 C CNN
-F 3 "~" H 3800 12500 50  0001 C CNN
-	1    3800 12500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Motor:Motor_Servo_Hitec M-?
-U 1 1 60A842AF
-P 4850 12600
-F 0 "M-?" H 5200 12650 50  0000 L CNN
-F 1 "Motor_Servo_Hitec" H 5200 12550 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4850 12410 50  0001 C CNN
-F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 4850 12410 50  0001 C CNN
-	1    4850 12600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4000 11400 4650 11400
-Wire Wire Line
-	4000 11500 5050 11500
-Wire Wire Line
-	5050 11400 5050 11500
-$Comp
-L Switch:SW_Push SW?
-U 1 1 60A842B8
-P 4850 11400
-F 0 "SW?" H 4850 11600 50  0000 C CNN
-F 1 "SW_Push" H 4850 11594 50  0001 C CNN
-F 2 "" H 4850 11600 50  0001 C CNN
-F 3 "~" H 4850 11600 50  0001 C CNN
-	1    4850 11400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4550 11600 4000 11600
-Wire Wire Line
-	4000 11700 4550 11700
-Wire Wire Line
-	4550 11800 4000 11800
-$Comp
-L Connector:Conn_01x05_Male Jm?
-U 1 1 60A842C1
-P 3800 11600
-F 0 "Jm?" H 3900 11950 50  0000 C CNN
-F 1 "Conn_01x05_Male" H 3908 11890 50  0001 C CNN
-F 2 "" H 3800 11600 50  0001 C CNN
-F 3 "~" H 3800 11600 50  0001 C CNN
-	1    3800 11600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Motor:Motor_Servo_Hitec M-?
-U 1 1 60A842C7
-P 4850 11700
-F 0 "M-?" H 5200 11750 50  0000 L CNN
-F 1 "Motor_Servo_Hitec" H 5200 11650 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4850 11510 50  0001 C CNN
-F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 4850 11510 50  0001 C CNN
-	1    4850 11700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4000 10500 4650 10500
-Wire Wire Line
-	4000 10600 5050 10600
-Wire Wire Line
-	5050 10500 5050 10600
-$Comp
-L Switch:SW_Push SW?
-U 1 1 60A842D0
-P 4850 10500
-F 0 "SW?" H 4850 10700 50  0000 C CNN
-F 1 "SW_Push" H 4850 10694 50  0001 C CNN
-F 2 "" H 4850 10700 50  0001 C CNN
-F 3 "~" H 4850 10700 50  0001 C CNN
-	1    4850 10500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4550 10700 4000 10700
-Wire Wire Line
-	4000 10800 4550 10800
-Wire Wire Line
-	4550 10900 4000 10900
-$Comp
-L Connector:Conn_01x05_Male Jm?
-U 1 1 60A842D9
-P 3800 10700
-F 0 "Jm?" H 3900 11050 50  0000 C CNN
-F 1 "Conn_01x05_Male" H 3908 10990 50  0001 C CNN
-F 2 "" H 3800 10700 50  0001 C CNN
-F 3 "~" H 3800 10700 50  0001 C CNN
-	1    3800 10700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Motor:Motor_Servo_Hitec M-?
-U 1 1 60A842DF
-P 4850 10800
-F 0 "M-?" H 5200 10850 50  0000 L CNN
-F 1 "Motor_Servo_Hitec" H 5200 10750 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4850 10610 50  0001 C CNN
-F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 4850 10610 50  0001 C CNN
-	1    4850 10800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4000 9600 4650 9600
-Wire Wire Line
-	4000 9700 5050 9700
-Wire Wire Line
-	5050 9600 5050 9700
-$Comp
-L Switch:SW_Push SW?
-U 1 1 60A842E8
-P 4850 9600
-F 0 "SW?" H 4850 9800 50  0000 C CNN
-F 1 "SW_Push" H 4850 9794 50  0001 C CNN
-F 2 "" H 4850 9800 50  0001 C CNN
-F 3 "~" H 4850 9800 50  0001 C CNN
-	1    4850 9600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4550 9800 4000 9800
-Wire Wire Line
-	4000 9900 4550 9900
-Wire Wire Line
-	4550 10000 4000 10000
-$Comp
-L Connector:Conn_01x05_Male Jm?
-U 1 1 60A842F1
-P 3800 9800
-F 0 "Jm?" H 3900 10150 50  0000 C CNN
-F 1 "Conn_01x05_Male" H 3908 10090 50  0001 C CNN
-F 2 "" H 3800 9800 50  0001 C CNN
-F 3 "~" H 3800 9800 50  0001 C CNN
-	1    3800 9800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Motor:Motor_Servo_Hitec M-?
-U 1 1 60A842F7
-P 4850 9900
-F 0 "M-?" H 5200 9950 50  0000 L CNN
-F 1 "Motor_Servo_Hitec" H 5200 9850 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4850 9710 50  0001 C CNN
-F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 4850 9710 50  0001 C CNN
-	1    4850 9900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4000 8700 4650 8700
-Wire Wire Line
-	4000 8800 5050 8800
-Wire Wire Line
-	5050 8700 5050 8800
-$Comp
-L Switch:SW_Push SW?
-U 1 1 60A84300
-P 4850 8700
-F 0 "SW?" H 4850 8900 50  0000 C CNN
-F 1 "SW_Push" H 4850 8894 50  0001 C CNN
-F 2 "" H 4850 8900 50  0001 C CNN
-F 3 "~" H 4850 8900 50  0001 C CNN
-	1    4850 8700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4550 8900 4000 8900
-Wire Wire Line
-	4000 9000 4550 9000
-Wire Wire Line
-	4550 9100 4000 9100
-$Comp
-L Connector:Conn_01x05_Male Jm?
-U 1 1 60A84309
-P 3800 8900
-F 0 "Jm?" H 3900 9250 50  0000 C CNN
-F 1 "Conn_01x05_Male" H 3908 9190 50  0001 C CNN
-F 2 "" H 3800 8900 50  0001 C CNN
-F 3 "~" H 3800 8900 50  0001 C CNN
-	1    3800 8900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Motor:Motor_Servo_Hitec M-?
-U 1 1 60A8430F
-P 4850 9000
-F 0 "M-?" H 5200 9050 50  0000 L CNN
-F 1 "Motor_Servo_Hitec" H 5200 8950 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4850 8810 50  0001 C CNN
-F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 4850 8810 50  0001 C CNN
-	1    4850 9000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4000 7800 4650 7800
-Wire Wire Line
-	4000 7900 5050 7900
-Wire Wire Line
-	5050 7800 5050 7900
-$Comp
-L Switch:SW_Push SW?
-U 1 1 60A84318
-P 4850 7800
-F 0 "SW?" H 4850 8000 50  0000 C CNN
-F 1 "SW_Push" H 4850 7994 50  0001 C CNN
-F 2 "" H 4850 8000 50  0001 C CNN
-F 3 "~" H 4850 8000 50  0001 C CNN
-	1    4850 7800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4550 8000 4000 8000
-Wire Wire Line
-	4000 8100 4550 8100
-Wire Wire Line
-	4550 8200 4000 8200
-$Comp
-L Motor:Motor_Servo_Hitec M-?
-U 1 1 60A84321
-P 4850 8100
-F 0 "M-?" H 5200 8150 50  0000 L CNN
-F 1 "Motor_Servo_Hitec" H 5200 8050 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4850 7910 50  0001 C CNN
-F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 4850 7910 50  0001 C CNN
-	1    4850 8100
-	1    0    0    -1  
-$EndComp
+	6450 10900 6600 10900
 $EndSCHEMATC

@@ -1,0 +1,8 @@
+Comment,Designator,Footprint,LCSC Part #
+LED Light emitting diode,"D1,D2,D3,D4,D5,D6,D7,D8,D9,D10,D11,D12,D13,D14,D15,D16",LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,
+"Conn_01x08_Female Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)",J1,691382040008,
+R10k Resistor,R1,R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,
+R330 Resistor,"R2,R3,R4,R5,R6,R7,R8,R9,R10,R11,R12,R13,R14,R15,R16,R17",R_0603_1608Metric,
+DHT22 Temperature and humidity module,U1,DHT22_15.0x25.0_P2.54mm_Horizontal,
+SSCDRNN015PASA5 ,U2,DIP-8_W8.89mm_SMDSocket_LongPads,
+"TCA9555DBR 16-bit I/O expander, I2C and SMBus interface, interrupts, w/ pull-ups, SSOP-24",U3,SSOP-24_5.3x8.2mm_P0.65mm,

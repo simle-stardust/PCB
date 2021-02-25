@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name stardust-rescue)(type Legacy)(uri /home/yasiu/Projects/PCB/stardust-shield/stardust-rescue.lib)(options "")(descr ""))
+  (lib (name sscdrnn015pasa5)(type Legacy)(uri /home/yasiu/Projects/PCB/stardust-shield/sscdrnn015pasa5.lib)(options "")(descr ""))
+)
